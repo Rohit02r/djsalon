@@ -1,0 +1,20 @@
+.product-image {
+    border-radius: 10px;
+    box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.7);
+    width: 350px; /* Set the desired width */
+    height: 350px;  /* Maintain aspect ratio */
+    max-width: 100%; /* Make sure it doesn't overflow the container */
+  }
+  
+  .product-details {
+    
+    position: relative;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .quantity-controls{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+  }

@@ -1,0 +1,52 @@
+.about-container {
+    padding: 40px; /* Increase padding for better spacing */
+    line-height: 2; /* Double the line spacing for readability */
+  }
+  
+  .intro h2 {
+    font-size: 32px; /* Increase font size for emphasis */
+    margin-bottom: 20px; /* Increase spacing below headings */
+    font-weight: bold; /* Make headings stand out */
+  }
+  
+  .intro p {
+    margin-bottom: 30px; /* Increase space between paragraphs */
+    font-size: 18px; /* Slightly larger font for better readability */
+    line-height: 1.8; /* Increase line height for a more open feel */
+    padding-left: 20px; /* Add padding to the start of paragraphs */
+    padding-right: 20px; /* Add padding to the end of paragraphs */
+  }
+  
+  .reviews {
+    margin-top: 50px; /* Increase margin above reviews section */
+  }
+  
+  .review-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px; /* Add spacing between review cards */
+  }
+  
+  .review-card {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 25px; /* Increase padding inside review cards */
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth hover transition */
+  }
+  
+  .review-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .review-image {
+    border-radius: 50%;
+    width: 120px; /* Slightly larger for emphasis */
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px; /* Increase space below image */
+  }
+  
