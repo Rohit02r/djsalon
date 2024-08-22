@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/github.io/djsalon/static/css/main.a023c981.css",
+    "main.js": "/github.io/djsalon/static/js/main.427e4d5e.js",
+    "static/js/453.d62acb0d.chunk.js": "/github.io/djsalon/static/js/453.d62acb0d.chunk.js",
+    "static/media/Barber2.jpg": "/github.io/djsalon/static/media/Barber2.1b73d9cdd67d99d3d343.jpg",
+    "static/media/Hairstyle.jpg": "/github.io/djsalon/static/media/Hairstyle.aef1aac62d1a6593814e.jpg",
+    "static/media/Makeup copy.jpg": "/github.io/djsalon/static/media/Makeup copy.e004752f32dba562f848.jpg",
+    "static/media/Makeup.jpg": "/github.io/djsalon/static/media/Makeup.e004752f32dba562f848.jpg",
+    "static/media/Barber1.jpg": "/github.io/djsalon/static/media/Barber1.55f2da414daffaa9dbe1.jpg",
+    "static/media/haircolor.jpg": "/github.io/djsalon/static/media/haircolor.3106cd8d799d383885d0.jpg",
+    "static/media/beard.jpg": "/github.io/djsalon/static/media/beard.05d48ca6875e87d4aaf7.jpg",
+    "static/media/eyebrow.jpg": "/github.io/djsalon/static/media/eyebrow.6e6c0103f5b62177cda8.jpg",
+    "static/media/facial.jpg": "/github.io/djsalon/static/media/facial.081c3ab851baa206b805.jpg",
+    "static/media/comb.jpg": "/github.io/djsalon/static/media/comb.0cdffb3d473772ce3f72.jpg",
+    "static/media/hair 6.jpg": "/github.io/djsalon/static/media/hair 6.81a2d0c1c77c0d5ca975.jpg",
+    "static/media/hair 1.jpg": "/github.io/djsalon/static/media/hair 1.952c46b97ee6bbc61174.jpg",
+    "static/media/makeup.jpg": "/github.io/djsalon/static/media/makeup.648bf1994d0e97bb2028.jpg",
+    "static/media/termeric.jpg": "/github.io/djsalon/static/media/termeric.7311b6a57214f911c206.jpg",
+    "static/media/review m2.jpg": "/github.io/djsalon/static/media/review m2.73004402af446cff216b.jpg",
+    "static/media/manicure.jpg": "/github.io/djsalon/static/media/manicure.b31a2548e9a34b34c09b.jpg",
+    "static/media/hairoil.jpg": "/github.io/djsalon/static/media/hairoil.8bdfef34923c29664c88.jpg",
+    "static/media/hair 4.jpg": "/github.io/djsalon/static/media/hair 4.71203fd8f7e75009d715.jpg",
+    "static/media/review m 1.jpg": "/github.io/djsalon/static/media/review m 1.dc2d3f0b08755176e597.jpg",
+    "static/media/shampoo.jpg": "/github.io/djsalon/static/media/shampoo.faab3d3f1db4e7c6d1a8.jpg",
+    "static/media/facecream.jpg": "/github.io/djsalon/static/media/facecream.d4c4dbb1d20c39e1aca0.jpg",
+    "static/media/headmassage.jpg": "/github.io/djsalon/static/media/headmassage.0199576d02f7179dbf67.jpg",
+    "static/media/bodylotion.jpg": "/github.io/djsalon/static/media/bodylotion.9d7cd4fa13841f3f55a8.jpg",
+    "static/media/pedicure.jpg": "/github.io/djsalon/static/media/pedicure.ac3ae16290ef69966fd6.jpg",
+    "static/media/review f1.jpg": "/github.io/djsalon/static/media/review f1.bf60578ffe8b853aa913.jpg",
+    "static/media/aleovera.jpg": "/github.io/djsalon/static/media/aleovera.a9130d27219e0a19fb1f.jpg",
+    "static/media/beard oil.jpg": "/github.io/djsalon/static/media/beard oil.6366122756a093f34d34.jpg",
+    "static/media/sunsreen.jpg": "/github.io/djsalon/static/media/sunsreen.a4aa4dc700eb0f88fdda.jpg",
+    "index.html": "/github.io/djsalon/index.html",
+    "main.a023c981.css.map": "/github.io/djsalon/static/css/main.a023c981.css.map",
+    "main.427e4d5e.js.map": "/github.io/djsalon/static/js/main.427e4d5e.js.map",
+    "453.d62acb0d.chunk.js.map": "/github.io/djsalon/static/js/453.d62acb0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a023c981.css",
+    "static/js/main.427e4d5e.js"
+  ]
+}
