@@ -30,11 +30,11 @@
     margin: 0 10px; /* Adds space around each link (left and right) */
   }
   
-  /* .nav-link.active {
+  .nav-link.active {
     font-weight: bold;
     color:#7A1CAC !important ;/* Customize active link color */
-  /* } */
-   */
+   }
+   
   .form-inline {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */

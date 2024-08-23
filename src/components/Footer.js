@@ -1,43 +1,57 @@
 import React from 'react';
+import './Footer.css'
+import YoutubeIcon from '../assests/Icon/y.svg';
+import TwitterIcon from '../assests/Icon/t.svg';
+import InstagramIcon from '../assests/Icon/i.svg';
+import WhatsAppIcon from '../assests/Icon/w.svg';
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-light py-4">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          {/* Contact Us Section */}
+          <div className="col-md-4 ps-4">
             <h5>Contact Us</h5>
-            <p>DJ Saloon</p>
-            <p>123 Beauty St, Salon City</p>
             <p>Email: info@djsaloon.com</p>
             <p>Phone: +123 456 7890</p>
           </div>
-          <div className="col-md-4">
-            <h5>Feedback</h5>
-            <form>
-              <div className="mb-3">
-                <label className="form-label">Your Feedback</label>
-                <textarea className="form-control" rows="3"></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
-            </form>
+
+          {/* Quick Links Section */}
+          <div className="col-md-4 ps-4">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="/djsalon/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
           </div>
-          <div className="col-md-4">
-            <h5>Find Us</h5>
-            {/* <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094377!2d144.95373531568745!3d-37.8172097420215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d7ba8d1077e6!2sVictoria%20Market!5e0!3m2!1sen!2sau!4v1641735668984!5m2!1sen!2sau"
-              width="100%"
-              height="200"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              title="DJ Saloon Location"
-            ></iframe> */}
+
+          {/* Follow Us Section */}
+          <div className="col-md-4 ps-4">
+            <h5>Follow Us</h5>
+            <div className="social-icons">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src={YoutubeIcon} alt="YouTube" width="24" height="24" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src={TwitterIcon} alt="Twitter" width="24" height="24" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src={InstagramIcon} alt="Instagram" width="24" height="24" />
+              </a>
+              <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer">
+                <img src={WhatsAppIcon} alt="WhatsApp" width="24" height="24" />
+              </a>
+            </div>
           </div>
+        </div>
+        <div className="copyright">
+          <p>&copy; 2024 DJ Saloon. All rights reserved.</p>
         </div>
       </div>
     </footer>
   );
 };
 
-export default Footer
+export default Footer;

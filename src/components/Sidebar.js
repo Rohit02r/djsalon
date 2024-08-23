@@ -1,8 +1,8 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, forwardRef } from 'react';
 import { Link } from 'react-router-dom'; // Use Link from react-router-dom for internal navigation
 import './Sidebar.css';
 
-const Sidebar = ({ isOpen, onClose }) => {
+const Sidebar = forwardRef(({ isOpen, onClose }, ref) => {
   const sidebarRef = useRef(null);
 
   useEffect(() => {
@@ -16,12 +16,12 @@ const Sidebar = ({ isOpen, onClose }) => {
   }, [onClose]);
 
   return (
-    <div className={`sidebar ${isOpen ? 'open' : ''}`} ref={sidebarRef}>
+    <div className={`sidebar ${isOpen ? 'open' : ''}`} ref={ref}>
       <div className="sidebar-header">
         <button onClick={onClose} className="close-btn">&times;</button>
       </div>
       <ul className="sidebar-menu">
-        <li><Link to="/your-account">Your Account</Link></li>
+        <li><Link to="/account">Your Account</Link></li>
         <li><Link to="/favourites">Favourites</Link></li>
         <li><Link to="/settings">Settings</Link></li>
         <li><Link to="/logout">Logout</Link></li>
@@ -29,6 +29,6 @@ const Sidebar = ({ isOpen, onClose }) => {
       </ul>
     </div>
   );
-};
+});
 
 export default Sidebar;

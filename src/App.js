@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from 'styled-components';
 import StickyNavbar from './components/StickyNavbar';
+import { CartProvider } from './components/CartContext';
+import Cart from './components/Cart';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -9,7 +11,8 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import ProductDetails from './components/ProductDetails';
 import FAQ from './components/sidebar/FAQ'
-import Account from './components/sidebar/Your account';
+import Checkout from './components/Checkout';
+import Account from './components/sidebar/Account';
 import './App.css'
 
 const theme = {
@@ -28,6 +31,7 @@ const user = {
 
 function App() {
   return (
+    <CartProvider>
     <ThemeProvider theme={theme}>
       {/* <Account user={user} /> */}
     
@@ -43,9 +47,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ/>} />
+        <Route path="/account" element={<Account user={user}/>} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/checkout" element={<Checkout />} /> {/* Add the checkout route */}
       </Routes>
     </Router>
     </ThemeProvider>
+    </CartProvider>
      
   );
 }

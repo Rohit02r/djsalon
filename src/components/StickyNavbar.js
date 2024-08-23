@@ -60,14 +60,12 @@ const StickyNavbar = () => {
       <Navbar
         bg={darkMode ? "dark" : "light"}
         variant={darkMode ? "dark" : "light"}
-        
         expand="lg"
-        className="shadow-sm p-2 "
+        className="shadow-sm p-2"
       >
-        
-        <div className="container-fluid ">
+        <div className="container-fluid">
           <LinkContainer to="/">
-            <Navbar.Brand >DJ Saloon</Navbar.Brand>
+            <Navbar.Brand>DJ Saloon</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -120,4 +118,5 @@ const StickyNavbar = () => {
     </div>
   );
 };
+
 export default StickyNavbar;
