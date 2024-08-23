@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/djsalon/static/css/main.cebcab0f.css",
+    "main.css": "/djsalon/static/css/main.82bbb443.css",
     "main.js": "/djsalon/static/js/main.3390c330.js",
     "static/js/453.d62acb0d.chunk.js": "/djsalon/static/js/453.d62acb0d.chunk.js",
     "static/media/Barber2.jpg": "/djsalon/static/media/Barber2.1b73d9cdd67d99d3d343.jpg",
@@ -34,12 +34,12 @@
     "static/media/s.svg": "/djsalon/static/media/s.9f861ced4c82420d33e448d4e4c282da.svg",
     "index.html": "/djsalon/index.html",
     "static/media/a.svg": "/djsalon/static/media/a.6ed0b482338407d1caa14038776b0d12.svg",
-    "main.cebcab0f.css.map": "/djsalon/static/css/main.cebcab0f.css.map",
+    "main.82bbb443.css.map": "/djsalon/static/css/main.82bbb443.css.map",
     "main.3390c330.js.map": "/djsalon/static/js/main.3390c330.js.map",
     "453.d62acb0d.chunk.js.map": "/djsalon/static/js/453.d62acb0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cebcab0f.css",
+    "static/css/main.82bbb443.css",
     "static/js/main.3390c330.js"
   ]
 }
