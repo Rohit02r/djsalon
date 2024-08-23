@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/djsalon/static/css/main.82bbb443.css",
-    "main.js": "/djsalon/static/js/main.3390c330.js",
+    "main.css": "/djsalon/static/css/main.c8e768d5.css",
+    "main.js": "/djsalon/static/js/main.9e5922b7.js",
     "static/js/453.d62acb0d.chunk.js": "/djsalon/static/js/453.d62acb0d.chunk.js",
     "static/media/Barber2.jpg": "/djsalon/static/media/Barber2.1b73d9cdd67d99d3d343.jpg",
     "static/media/Hairstyle.jpg": "/djsalon/static/media/Hairstyle.aef1aac62d1a6593814e.jpg",
@@ -31,15 +31,19 @@
     "static/media/aleovera.jpg": "/djsalon/static/media/aleovera.a9130d27219e0a19fb1f.jpg",
     "static/media/beard oil.jpg": "/djsalon/static/media/beard oil.6366122756a093f34d34.jpg",
     "static/media/sunsreen.jpg": "/djsalon/static/media/sunsreen.a4aa4dc700eb0f88fdda.jpg",
+    "static/media/i.svg": "/djsalon/static/media/i.a05ff817360ff072dfe0c80487de8e87.svg",
+    "static/media/w.svg": "/djsalon/static/media/w.73446a91f78019cbec1e2d190e9150b6.svg",
+    "static/media/y.svg": "/djsalon/static/media/y.f22812069ff694f2221e4e8c04417755.svg",
     "static/media/s.svg": "/djsalon/static/media/s.9f861ced4c82420d33e448d4e4c282da.svg",
     "index.html": "/djsalon/index.html",
     "static/media/a.svg": "/djsalon/static/media/a.6ed0b482338407d1caa14038776b0d12.svg",
-    "main.82bbb443.css.map": "/djsalon/static/css/main.82bbb443.css.map",
-    "main.3390c330.js.map": "/djsalon/static/js/main.3390c330.js.map",
+    "static/media/t.svg": "/djsalon/static/media/t.35ad775867f49879e1f2ac10d0d541b6.svg",
+    "main.c8e768d5.css.map": "/djsalon/static/css/main.c8e768d5.css.map",
+    "main.9e5922b7.js.map": "/djsalon/static/js/main.9e5922b7.js.map",
     "453.d62acb0d.chunk.js.map": "/djsalon/static/js/453.d62acb0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82bbb443.css",
-    "static/js/main.3390c330.js"
+    "static/css/main.c8e768d5.css",
+    "static/js/main.9e5922b7.js"
   ]
 }
