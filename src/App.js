@@ -8,6 +8,9 @@ import Services from './pages/Services';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import ProductDetails from './components/ProductDetails';
+import FAQ from './components/sidebar/FAQ'
+import Account from './components/sidebar/Your account';
+import './App.css'
 
 const theme = {
   colors: {
@@ -17,22 +20,33 @@ const theme = {
     light: '#d7c3f1',
   },
 };
+const user = {
+  username: 'JohnDoe',
+  email: 'john.doe@example.com',
+  createdAt: '2022-01-15T03:24:00'
+};
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-    <Router>
+      {/* <Account user={user} /> */}
+    
+    <Router basename="/djsalon">
+
     <StickyNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
+       
         <Route path="/services" element={<Services />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:productName" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ/>} />
       </Routes>
     </Router>
     </ThemeProvider>
+     
   );
 }
 

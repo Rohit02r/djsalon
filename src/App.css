@@ -49,9 +49,63 @@
 
 .nav-link.active {
   font-weight: bold;
-  color: #007bff !important; /* Customize active link color */
+  /* color: #007bff !important; Customize active link color */
 }
 
 .navbar {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+/* App.css */
+
+/* Default light mode styles */
+b/* Default light mode styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar styles in dark mode */
+body.dark-mode .Navbar {
+  background-color: #333333;
+  border-bottom: 1px solid #444444;
+}
+
+/* Link styles in dark mode */
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+/* Other components affected by dark mode */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+body.dark-mode .form-control {
+  background-color: #504f4f;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+body.dark-mode .btn-outline-success {
+  color: #bb86fc;
+  border-color: #bb86fc;
+}
+
+body.dark-mode .btn-outline-success:hover {
+  background-color: #bb86fc;
+  color: #fcfafa;
+}
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #aaaaaa;  /* Light gray for placeholder text */
+  opacity: 1;      /* Ensure full opacity for placeholder text */
 }

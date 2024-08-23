@@ -5,7 +5,16 @@
   }
   
   .navbar {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    
+    z-index: 1020; /* Ensure it's above other content */
+    background-color: var(--navbar-bg, #ffffff); /* Use CSS variable for background color */
+    transition: background-color 0.3s ease;
   }
   
   .navbar-expand-lg {
@@ -23,7 +32,7 @@
   
   .nav-link.active {
     font-weight: bold;
-    color: #007bff !important; /* Customize active link color */
+    color:#7A1CAC !important ;/* Customize active link color */
   }
   
   .form-inline {
@@ -39,4 +48,23 @@
   .btn {
     margin-left: 10px; /* Space around the button */
   }
+  /* Example of specific styling if needed */
+
+
+.navbar-light {
+  background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+}
+
+.navbar-dark {
+  background-color: #333333;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
   

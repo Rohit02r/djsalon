@@ -1,52 +1,110 @@
 .about-container {
-    padding: 40px; /* Increase padding for better spacing */
-    line-height: 2; /* Double the line spacing for readability */
-  }
-  
-  .intro h2 {
-    font-size: 32px; /* Increase font size for emphasis */
-    margin-bottom: 20px; /* Increase spacing below headings */
-    font-weight: bold; /* Make headings stand out */
-  }
-  
-  .intro p {
-    margin-bottom: 30px; /* Increase space between paragraphs */
-    font-size: 18px; /* Slightly larger font for better readability */
-    line-height: 1.8; /* Increase line height for a more open feel */
-    padding-left: 20px; /* Add padding to the start of paragraphs */
-    padding-right: 20px; /* Add padding to the end of paragraphs */
-  }
-  
-  .reviews {
-    margin-top: 50px; /* Increase margin above reviews section */
-  }
-  
-  .review-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px; /* Add spacing between review cards */
-  }
-  
-  .review-card {
-    text-align: center;
-    background: #f9f9f9;
-    padding: 25px; /* Increase padding inside review cards */
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth hover transition */
-  }
-  
-  .review-card:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  }
-  
-  .review-image {
-    border-radius: 50%;
-    width: 120px; /* Slightly larger for emphasis */
-    height: 120px;
-    object-fit: cover;
-    margin-bottom: 20px; /* Increase space below image */
-  }
-  
+  padding: 40px;
+  line-height: 2;
+  background-color: #f9f9f9; /* Light background for normal mode */
+
+}
+
+body.dark-mode .about-container {
+  background-color: #1e1e1e; /* Dark background for dark mode */
+  color: #ffffff; /* Light text for dark mode */
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.intro p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.8;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #eaeaea; /* Light background for paragraph block */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+body.dark-mode .intro p {
+  background-color: #2a2a2a; /* Dark background for paragraph block in dark mode */
+  color: #cccccc; /* Light text color for dark mode */
+}
+
+.reviews {
+  margin-top: 50px;
+}
+
+.review-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.review-card {
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #ffffff; /* Light background for review cards */
+  color: #333333;
+}
+
+body.dark-mode .review-card {
+  background-color: #2a2a2a;
+  color: #cccccc;
+  border: 1px solid #333333;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.review-image {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+body.dark-mode .review-image {
+  border: 2px solid #333333;
+}
+
+.terms-container {
+  padding: 40px;
+}
+
+.term-card {
+  background-color: rgba(122, 28, 172, 0.9); /* Faded version of #007bff */
+  color: #fdfcfc;  
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.term-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.term-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #007bff; /* Use the same color as the button for the heading */
+}
+
+.term-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  /* color: #333333; */
+}
+

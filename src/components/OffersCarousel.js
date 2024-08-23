@@ -8,10 +8,10 @@ import Makeup from '../assests/Slider/Makeup.jpg';
 
 const OffersCarousel = () => {
   return (
-    <Carousel className='m-5'>
+    <Carousel className='m-5 px-5'>
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 rounded-3"
           src={Barber1}
           alt="First slide"
           style={{ height: '500px',  }} // Ensure image height is 700px
@@ -23,7 +23,7 @@ const OffersCarousel = () => {
       </Carousel.Item>
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 rounded-3"
           src={Hairstyle}
           alt="Second slide"
           style={{ height: '500px',  }} // Ensure image height is 700px
@@ -35,7 +35,7 @@ const OffersCarousel = () => {
       </Carousel.Item>
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 rounded-3"
           src={Barber2}
           alt="Third slide"
           style={{ height: '500px',  }} // Ensure image height is 700px
@@ -47,7 +47,7 @@ const OffersCarousel = () => {
       </Carousel.Item>
       <Carousel.Item interval={1000}>
         <img
-          className="d-block w-100"
+          className="d-block w-100 rounded-3"
           src={Makeup}
           alt="Fourth slide"
           style={{ height: '500px',  }} // Ensure image height is 700px
