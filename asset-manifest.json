@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/djsalon/static/css/main.c8e768d5.css",
-    "main.js": "/djsalon/static/js/main.9e5922b7.js",
+    "main.css": "/djsalon/static/css/main.951db1ca.css",
+    "main.js": "/djsalon/static/js/main.329c9b81.js",
     "static/js/453.d62acb0d.chunk.js": "/djsalon/static/js/453.d62acb0d.chunk.js",
+    "static/media/croplogo.png": "/djsalon/static/media/croplogo.338688665c58275bdeac.png",
     "static/media/Barber2.jpg": "/djsalon/static/media/Barber2.1b73d9cdd67d99d3d343.jpg",
     "static/media/Hairstyle.jpg": "/djsalon/static/media/Hairstyle.aef1aac62d1a6593814e.jpg",
     "static/media/Makeup copy.jpg": "/djsalon/static/media/Makeup copy.e004752f32dba562f848.jpg",
@@ -38,12 +39,12 @@
     "index.html": "/djsalon/index.html",
     "static/media/a.svg": "/djsalon/static/media/a.6ed0b482338407d1caa14038776b0d12.svg",
     "static/media/t.svg": "/djsalon/static/media/t.35ad775867f49879e1f2ac10d0d541b6.svg",
-    "main.c8e768d5.css.map": "/djsalon/static/css/main.c8e768d5.css.map",
-    "main.9e5922b7.js.map": "/djsalon/static/js/main.9e5922b7.js.map",
+    "main.951db1ca.css.map": "/djsalon/static/css/main.951db1ca.css.map",
+    "main.329c9b81.js.map": "/djsalon/static/js/main.329c9b81.js.map",
     "453.d62acb0d.chunk.js.map": "/djsalon/static/js/453.d62acb0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8e768d5.css",
-    "static/js/main.9e5922b7.js"
+    "static/css/main.951db1ca.css",
+    "static/js/main.329c9b81.js"
   ]
 }
