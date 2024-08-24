@@ -13,6 +13,7 @@ import ProductDetails from './components/ProductDetails';
 import FAQ from './components/sidebar/FAQ'
 import Checkout from './components/Checkout';
 import Account from './components/sidebar/Account';
+import { DarkModeProvider } from './components/Darkmode';
 import './App.css'
 
 const theme = {
@@ -23,6 +24,7 @@ const theme = {
     light: '#d7c3f1',
   },
 };
+
 const user = {
   username: 'JohnDoe',
   email: 'john.doe@example.com',
@@ -31,30 +33,27 @@ const user = {
 
 function App() {
   return (
-    <CartProvider>
-    <ThemeProvider theme={theme}>
-      {/* <Account user={user} /> */}
-    
-    <Router basename="/djsalon">
-
-    <StickyNavbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-       
-        <Route path="/services" element={<Services />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:productName" element={<ProductDetails />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<FAQ/>} />
-        <Route path="/account" element={<Account user={user}/>} />
-        <Route path="/cart" element={<Cart/>} />
-        <Route path="/checkout" element={<Checkout />} /> {/* Add the checkout route */}
-      </Routes>
-    </Router>
-    </ThemeProvider>
-    </CartProvider>
-     
+    <DarkModeProvider>
+      <CartProvider>
+        <ThemeProvider theme={theme}>
+          <Router basename="/djsalon">
+            <StickyNavbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/products/:productName" element={<ProductDetails />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/account" element={<Account user={user} />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          </Router>
+        </ThemeProvider>
+      </CartProvider>
+    </DarkModeProvider>
   );
 }
 

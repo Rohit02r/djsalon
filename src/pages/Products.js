@@ -1,6 +1,10 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 import './Products.css'; // Import the CSS file for styling
 import Shampoo from '../assests/Products/shampoo.jpg'
 import FaceCream from '../assests/Products/facecream.jpg'
@@ -83,6 +87,10 @@ const Products = () => {
     // Programmatically navigate to the product details page
     navigate(`/products/${product.title.toLowerCase().replace(/\s+/g, '-')}`, { state: { product } });
   };
+  useEffect(() => {
+    console.log('Initializing AOS');
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div>
     <section id="products" className="products-section py-5">

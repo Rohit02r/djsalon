@@ -22,9 +22,8 @@ const Sidebar = forwardRef(({ isOpen, onClose }, ref) => {
       </div>
       <ul className="sidebar-menu">
         <li><Link to="/account">Your Account</Link></li>
-        <li><Link to="/favourites">Favourites</Link></li>
-        <li><Link to="/settings">Settings</Link></li>
-        <li><Link to="/logout">Logout</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/faq">FAQ</Link></li>
       </ul>
     </div>

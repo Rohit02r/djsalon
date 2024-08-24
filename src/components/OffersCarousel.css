@@ -1,0 +1,59 @@
+/* CSS for Offers Carousel */
+
+.offers-carousel .offer-image {
+    filter: brightness(50%);
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Caption styling for larger screens */
+  .offers-carousel .offer-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .offers-carousel .offer-caption h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .offers-carousel .offer-caption p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .offers-carousel .offer-image {
+      height: 300px; /* Reduce the height for smaller screens */
+    }
+  
+    .offers-carousel .offer-caption h3 {
+      font-size: 1.8rem; /* Reduce font size for the offer title */
+    }
+  
+    .offers-carousel .offer-caption p {
+      font-size: 1.2rem; /* Reduce font size for the offer description */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .offers-carousel .offer-image {
+      height: 200px; /* Further reduce the height for very small screens */
+    }
+  
+    .offers-carousel .offer-caption h3 {
+      font-size: 1.5rem; /* Further reduce font size for the offer title */
+    }
+  
+    .offers-carousel .offer-caption p {
+      font-size: 1rem; /* Further reduce font size for the offer description */
+    }
+  }
+  

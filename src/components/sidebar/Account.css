@@ -1,0 +1,102 @@
+/* Basic card styling */
+.card {
+  /* padding: 2% 6%; */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.card-body {
+  /* padding: 20px; */
+}
+
+/* Form group styling */
+.form-group {
+  margin: 20px 0 ;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control, textarea {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Buttons */
+.account-btn {
+  margin-right: 10px;
+}
+
+.account-btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.account-btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Dark mode styles */
+.dark-mode .card {
+  background-color: #2c2c2c; /* Dark background for cards */
+  border-color: #444; /* Dark border for cards */
+}
+
+.dark-mode .card-body {
+  color: #ffffff; /* Light text color for card body */
+}
+
+.dark-mode .form-control,
+.dark-mode textarea {
+  background-color: #333; /* Dark background for form controls */
+  color: #ffffff; /* Light text for form controls */
+  border: 1px solid #444; /* Border to match dark theme */
+}
+
+.dark-mode .form-control::placeholder,
+.dark-mode textarea::placeholder {
+  color: #aaa; /* Light gray placeholder text */
+}
+
+.dark-mode .card-title {
+ 
+  color: #ffffff; /* Light text color for card titles */
+}
+
+/* Add padding or margin to the label */
+.form-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust the bottom margin if needed */
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px; /* Adjust the right margin to create space between checkbox and text */
+}
+
+.account-details {
+  font-size: 18px; /* Adjust this value as needed */
+}
+
+.account-details label {
+  font-size: 16px; /* Optional: Adjust font size for labels within the account-details section */
+}
+
+.account-details p {
+  font-size: 18px; /* Optional: Adjust font size for paragraphs within the account-details section */
+}
+
+.account-title {
+  font-size: 24px; /* Adjust this value as needed */
+  margin-bottom: 20px;
+}

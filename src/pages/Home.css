@@ -1,0 +1,84 @@
+/* Home Page General Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Featured Services Section */
+  .featured-services {
+    margin-top: 50px;
+  }
+  
+  .featured-services .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .featured-services .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .featured-services .card-body {
+    padding: 20px;
+  }
+  
+  .featured-services .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .featured-services .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .testimonials .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .testimonials .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonials .card-body {
+    padding: 30px;
+  }
+  
+  .testimonials .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .testimonials .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  /* Introductory Text (h3) Card */
+  .intro-card {
+    /* background-color: #f8f9fa; */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro-card h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .intro-card p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #495057;
+  }
+  

@@ -41,7 +41,6 @@
   }
 }
 
-
 /* StickyNavbar.css */
 .navbar-brand {
   font-weight: bold;
@@ -49,16 +48,16 @@
 
 .nav-link.active {
   font-weight: bold;
-  /* color: #007bff !important; Customize active link color */
+  color: #007bff !important; /* Customize active link color */
 }
 
 .navbar {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
+
 /* App.css */
 
 /* Default light mode styles */
-b/* Default light mode styles */
 body {
   background-color: #ffffff;
   color: #000000;
@@ -72,7 +71,7 @@ body.dark-mode {
 }
 
 /* Navbar styles in dark mode */
-body.dark-mode .Navbar {
+body.dark-mode .navbar {
   background-color: #333333;
   border-bottom: 1px solid #444444;
 }
@@ -104,8 +103,9 @@ body.dark-mode .btn-outline-success:hover {
   background-color: #bb86fc;
   color: #fcfafa;
 }
+
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
-  color: #aaaaaa;  /* Light gray for placeholder text */
-  opacity: 1;      /* Ensure full opacity for placeholder text */
+  color: #aaaaaa; /* Light gray for placeholder text */
+  opacity: 1; /* Ensure full opacity for placeholder text */
 }
