@@ -1,6 +1,63 @@
+/* Default light mode styles */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar styles in dark mode */
+body.dark-mode .navbar {
+  background-color: #333333;
+  border-bottom: 1px solid #444444;
+}
+
+/* Link styles in dark mode */
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+/* Card styles in dark mode */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+/* Form control styles in dark mode */
+body.dark-mode .form-control {
+  background-color: #504f4f;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+/* Button styles in dark mode */
+body.dark-mode .btn-outline-success {
+  color: #bb86fc;
+  border-color: #bb86fc;
+}
+
+body.dark-mode .btn-outline-success:hover {
+  background-color: #bb86fc;
+  color: #fcfafa;
+}
+
+/* Placeholder text color in dark mode */
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #cccccc; /* Adjusted for better readability */
+  opacity: 1; /* Ensure full opacity for placeholder text */
+}
+
+/* Sidebar styles */
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 10%;
   right: 0;
   width: 250px;
   height: 100%;
@@ -43,12 +100,17 @@
   text-decoration: none;
   color: #000; /* Light mode link color */
   display: block;
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.sidebar-menu li a:hover {
-  background-color: #f1f1f1; /* Light mode hover color */
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+  background-color: #b4b5b6; /* Light mode hover and active color */
 }
 
+/* Dark mode sidebar styles */
 .dark-mode .sidebar {
   background-color: #333; /* Dark mode background color */
 }
@@ -61,6 +123,7 @@
   color: #fff; /* Dark mode link color */
 }
 
-.dark-mode .sidebar-menu li a:hover {
-  background-color: #555; /* Dark mode hover color */
+.dark-mode .sidebar-menu li a:hover,
+.dark-mode .sidebar-menu li a.active {
+  background-color: #555; /* Dark mode hover and active color */
 }

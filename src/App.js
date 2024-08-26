@@ -7,11 +7,13 @@ import Cart from './components/Cart';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import ServiceDetails from './components/ServiceDetails';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import ProductDetails from './components/ProductDetails';
 import FAQ from './components/sidebar/FAQ'
 import Checkout from './components/Checkout';
+import SearchResults from './components/SearchResults';
 import Account from './components/sidebar/Account';
 import { DarkModeProvider } from './components/Darkmode';
 import './App.css'
@@ -41,6 +43,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/service-details" element={<ServiceDetails/>} />
               <Route path="/products" element={<Products />} />
               <Route path="/products/:productName" element={<ProductDetails />} />
               <Route path="/about" element={<About />} />
@@ -49,6 +52,7 @@ function App() {
               <Route path="/account" element={<Account user={user} />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
+              <Route path="/search" element={<SearchResults />} />
             </Routes>
           </Router>
         </ThemeProvider>

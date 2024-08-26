@@ -27,11 +27,17 @@
 
 .nav-link {
   margin: 0 10px; /* Adds space around each link (left and right) */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background */
 }
 
 .nav-link.active {
   font-weight: bold;
   color: #7A1CAC !important; /* Customize active link color */
+}
+
+.nav-link:hover {
+  color: #7A1CAC !important; /* Change text color on hover */
+  background-color: rgba(122, 28, 172, 0.1); /* Slightly darker background on hover */
 }
 
 .form-inline {
@@ -41,6 +47,7 @@
 }
 
 .form-control {
+  width: 80%;
   margin-right: 10px; /* Space between the input and button */
 }
 
@@ -74,4 +81,95 @@
 
 .dark-mode .navbar .navbar-nav .nav-link {
   color: #080808; /* Darker text for links */
+}
+
+.dark-mode .navbar .navbar-nav .nav-link:hover {
+  color: #7A1CAC !important; /* Change text color on hover in dark mode */
+  background-color: rgba(122, 28, 172, 0.1); /* Slightly darker background on hover in dark mode */
+}
+
+/* Hide the search bar in the navbar for mobile */
+@media (max-width: 992px) {
+  .search-form {
+    display: none;
+  }
+}
+
+/* Remove background color for mobile search bar */
+.mobile-search {
+  width: 100%;
+  background-color: transparent; /* Remove background color */
+}
+
+/* Align search form, cart, and profile icons in a row */
+.mobile-search .form-inline {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Inline cart and profile icons with the search bar in mobile view */
+.mobile-search .mobile-icons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Add space between search bar and icons */
+}
+
+/* Ensure cart and profile icons are in the same row as the search bar */
+.mobile-search .form-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-icons img {
+  margin-left: 10px; /* Space between the cart and profile icons */
+}
+
+.search-suggestions{
+ position: absolute;
+ margin-left: 60%;
+ width: 320px;
+ 
+}
+
+.ss:hover{
+  background-color: #c7c5c5 ; /* Light gray background on hover */
+  color: #7A1CAC;
+  border-radius: 5px; /* Change text color on hover */
+}
+   
+    
+ 
+
+/* Mobile search suggestions */
+.search-suggestions-mobile {
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-suggestions-mobile .dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Hover effect for mobile search suggestions */
+.search-suggestions-mobile .dropdown-item:hover {
+  background-color: #c7c5c5; /* Light gray background on hover */
+  color: #7A1CAC;
+  border-radius: 5px; /* Change text color on hover */
+}
+
+.search-suggestions-mobile .dropdown-item img {
+  margin-right: 10px;
 }
