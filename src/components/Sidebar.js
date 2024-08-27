@@ -2,7 +2,8 @@ import React, { useRef, useEffect, forwardRef } from 'react';
 import { NavLink } from 'react-router-dom'; // Use NavLink for active link styles
 import './Sidebar.css';
 
-const Sidebar = forwardRef(({ isOpen, onClose }, ref) => {
+const Sidebar = forwardRef(({ isOpen, onClose, recentItems = [] }, ref) => {
+
   const sidebarRef = useRef(null);
 
   useEffect(() => {
@@ -33,6 +34,15 @@ const Sidebar = forwardRef(({ isOpen, onClose }, ref) => {
             onClick={onClose}
           >
             Your Account
+          </NavLink>
+        </li>
+        <li>
+          <NavLink 
+            to="/favorites" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+            onClick={onClose}
+          >
+            Favorites
           </NavLink>
         </li>
         <li>

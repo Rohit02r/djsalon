@@ -1,8 +1,8 @@
-// Cart.js
+// src/components/Cart.js
 import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
 import { Link } from 'react-router-dom';
-import './Cart.css'
+import './Cart.css'; // Import CSS for styling
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
@@ -15,14 +15,20 @@ const Cart = () => {
       ) : (
         <div className="cart-items">
           {cart.map((item, index) => (
-  <div key={index} className="cart-item mb-4">
-    <h4>{item.product.title}</h4>
-    <p>Quantity: {item.quantity}</p>
-    <p>Price: ₹ {item.product.price}</p>
-    <hr />
-  </div>
-))}
-
+            <div key={index} className="cart-item card mb-4">
+              <div className="cart-item-content">
+                <div className="cart-item-image-title">
+                  <img src={item.product.img} alt={item.product.title} className="card-img" />
+                  <h4 className="card-title">{item.product.title}</h4>
+                </div>
+                <div className="cart-item-details">
+                  <p className="card-text">{item.product.description}</p>
+                  <p className="price">₹ {item.product.price}</p>
+                  <p className="quantity">Quantity: {item.quantity}</p>
+                </div>
+              </div>
+            </div>
+          ))}
           <button className="btn btn-primary mt-4">Proceed to Checkout</button>
         </div>
       )}

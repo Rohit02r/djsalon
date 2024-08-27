@@ -46,15 +46,26 @@
   margin-left: 20px; /* Adds space between the links and the search form */
 }
 
-.form-control {
-  width: 80%;
-  margin-right: 10px; /* Space between the input and button */
+.search-form {
+  margin: 0% 2%;
+
+  width: 300px;
 }
 
-.btn {
-  margin-left: 10px; /* Space around the button */
+.bts {
+  margin: 0% 5%;
+  color:#7A1CAC;
+  border: 2px solid #7A1CAC;
+  /* margin-left: 10px; Space around the button */
 }
 
+.bts:hover {
+  margin: 0% 5%;
+  color:#f6f5f7;
+  background-color: #7A1CAC;
+  border: 2px solid #7A1CAC;
+  /* margin-left: 10px; Space around the button */
+}
 /* Light Mode Styles */
 .navbar-light {
   background-color: #ffffff;
@@ -172,4 +183,10 @@
 
 .search-suggestions-mobile .dropdown-item img {
   margin-right: 10px;
+}
+.icp{
+  margin: 0% 10%;
+}
+.icc{
+  margin: 0% 10px 0 0;
 }

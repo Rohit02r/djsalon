@@ -127,3 +127,13 @@ body.dark-mode textarea::placeholder {
 .dark-mode .sidebar-menu li a.active {
   background-color: #555; /* Dark mode hover and active color */
 }
+/* Sidebar.css */
+.sidebar-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-menu ul li {
+  padding: 8px 0;
+  cursor: pointer;
+}

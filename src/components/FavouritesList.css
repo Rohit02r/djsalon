@@ -1,0 +1,28 @@
+/* FavoritesPage.css */
+
+.favorites-page {
+    padding: 20px;
+  }
+  
+  .favorites-page h1 {
+    margin-bottom: 20px;
+  }
+  
+  .favorites-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .favorites-page li {
+    margin: 10px 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black; /* Adjust based on your design */
+  }
+  
+  .nav-link.active {
+    font-weight: bold; /* Highlight active link */
+  }
+  

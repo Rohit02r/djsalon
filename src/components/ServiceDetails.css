@@ -1,62 +1,90 @@
-/* ServiceDetails.css */
 .service-details {
- 
- margin-left: 18%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   justify-content: center;
+}
+
+.sdalign {
+  margin: 0 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.service-image {
+  width: 100%;
+  /* max-width: 150px; */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.7);
+}
+
+.sddesc {
   
-  }
-  
-  .sdalign {
-    margin: 0 10px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .service-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.7);
-  }
-  
-  .sddesc {
-    position: relative;
-    bottom: 50%;
-    padding: 150px 10px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* .sd-desc p {
-    font-size: 1.1em;
-    line-height: 1.5;
-    text-align: center;
-   
-   
-    justify-content: center;
-  } */
-  
-  .btn-primary {
-    background-color: #7A1CAC;
-    border-color: #7A1CAC;
-  }
-  
-  .btn-primary:hover {
-    background-color: #5e1289;
-    border-color: #5e1289;
-  }
-.cont{
-  width: 800px;
+  padding: 20px 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cont {
+  width: 100%;
+  max-width: 700px;
   background-color: bisque;
   border-radius: 10px;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   justify-content: center;
-  margin: 0%;
+  margin: 0 auto;
+  padding: 20px;
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+width: 50%;
+  background-color: #7A1CAC;
+  border-color: #7A1CAC;
+}
+
+.btn-primary:hover {
+  background-color: #5e1289;
+  border-color: #5e1289;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .cont {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    padding: 20px 40px;
   }
-  
+
+  .sdalign {
+    text-align: left;
+    margin-right: 20px;
+  }
+
+  .sddesc {
+    text-align: left;
+    padding: 0 20px;
+    flex-grow: 1;
+  }
+
+  .service-image {
+    margin-right: 20px;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cont {
+    max-width: 1000px;
+  }
+
+  .sddesc {
+    padding: 0 40px;
+  }
+}

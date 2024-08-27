@@ -7,30 +7,30 @@ import WhatsAppIcon from '../assests/Icon/w.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-4">
-      <div className="container">
-        <div className="row">
+    <footer className="footer bg-dark text-light py-4">
+      <div className="footer-container container">
+        <div className="footer-row row">
           {/* Contact Us Section */}
-          <div className="col-md-4 ps-4">
-            <h5>Contact Us</h5>
+          <div className="footer-col col-md-4">
+            <h5 className="footer-heading">Contact Us</h5>
             <p>Email: info@djsaloon.com</p>
             <p>Phone: +123 456 7890</p>
           </div>
 
           {/* Quick Links Section */}
-          <div className="col-md-4 ps-4">
-            <h5>Quick Links</h5>
-            <ul>
-              <li><a href="/djsalon/about">About Us</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Contact</a></li>
+          <div className="footer-col col-md-4">
+            <h5 className="footer-heading">Quick Links</h5>
+            <ul className="footer-links">
+              <li><a href="/djsalon/about" className="footer-link">About Us</a></li>
+              <li><a href="/services" className="footer-link">Services</a></li>
+              <li><a href="/contact" className="footer-link">Contact</a></li>
             </ul>
           </div>
 
           {/* Follow Us Section */}
-          <div className="col-md-4 ps-4">
-            <h5>Follow Us</h5>
-            <div className="social-icons">
+          <div className="footer-col col-md-4">
+            <h5 className="footer-heading">Follow Us</h5>
+            <div className="footer-social-icons">
               <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                 <img src={YoutubeIcon} alt="YouTube" width="24" height="24" />
               </a>
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="copyright">
+        <div className="footer-copyright">
           <p>&copy; 2024 DJ Saloon. All rights reserved.</p>
         </div>
       </div>

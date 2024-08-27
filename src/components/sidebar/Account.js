@@ -59,7 +59,7 @@ const Account = ({ user }) => {
     <Card.Text>
       {isEditing ? (
         <>
-          <div className="form-group">
+          <div className="fg">
             <label>Username:</label>
             <input
               type="text"
@@ -68,7 +68,7 @@ const Account = ({ user }) => {
               onChange={e => setEditedUser({ ...editedUser, username: e.target.value })}
             />
           </div>
-          <div className="form-group">
+          <div className="fg">
             <label>Email:</label>
             <input
               type="email"
@@ -98,13 +98,13 @@ const Account = ({ user }) => {
       <Card className="mb-4">
   <Card.Body>
     <Card.Title>Notification Preferences</Card.Title>
-    <div className="form-group">
+    <div className="fg">
       <label>
         <input type="checkbox" defaultChecked />
         Email Notifications
       </label>
     </div>
-    <div className="form-group">
+    <div className="fg">
       <label>
         <input type="checkbox" />
         SMS Notifications
@@ -127,7 +127,7 @@ const Account = ({ user }) => {
         <Card.Body>
           <Card.Title>Feedback</Card.Title>
           <form onSubmit={handleSubmit(handleFeedbackSubmit)}>
-            <div className="form-group">
+            <div className="fg">
               <label htmlFor="feedback-name">Name:</label>
               <Controller
                 name="name"
@@ -137,7 +137,7 @@ const Account = ({ user }) => {
               />
               {errors.name && <p className="text-danger">{errors.name.message}</p>}
             </div>
-            <div className="form-group">
+            <div className="fg">
               <label htmlFor="phoneNumber">Phone Number:</label>
               <Controller
                 name="phoneNumber"
@@ -147,7 +147,7 @@ const Account = ({ user }) => {
               />
               {errors.phoneNumber && <p className="text-danger">{errors.phoneNumber.message}</p>}
             </div>
-            <div className="form-group">
+            <div className="fg">
               <label htmlFor="feedback-comments">Comments:</label>
               <Controller
                 name="comments"

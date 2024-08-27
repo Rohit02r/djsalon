@@ -10,16 +10,16 @@
 }
 
 /* Form group styling */
-.form-group {
+.fg {
   margin: 20px 0 ;
 }
 
-.form-group label {
+.fg label {
   display: block;
   margin-bottom: 5px;
 }
 
-.form-control, textarea {
+.fg {
   width: 60%;
   padding: 8px;
   border: 1px solid #ccc;
@@ -74,13 +74,13 @@ textarea {
 }
 
 /* Add padding or margin to the label */
-.form-group label {
+.fg label {
   display: flex;
   align-items: center;
   margin-bottom: 10px; /* Adjust the bottom margin if needed */
 }
 
-.form-group input[type="checkbox"] {
+.fg input[type="checkbox"] {
   margin-right: 10px; /* Adjust the right margin to create space between checkbox and text */
 }
 

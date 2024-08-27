@@ -14,12 +14,12 @@ const CardSlider = () => {
     const [showModal, setShowModal] = useState(false);
   
     const cards = [
-      { img: Hair1, title: "Hair Stylist", description: "Expert hair styling services to give you the perfect look for any occasion." },
-      { img: Hair2, title: "Beautician", description: "Comprehensive beauty treatments to enhance your natural beauty." },
-      { img: Hair3, title: "Makeup Artist", description: "Professional makeup services tailored to your unique style and preferences." },
-      { img: Hair4, title: "Skin Care Specialist", description: "Advanced skin care treatments to rejuvenate and refresh your skin." },
-      { img: Hair5, title: "Nail Technician", description: "Stylish nail services, including manicures, pedicures, and nail art." },
-      { img: Hair6, title: "Hair Colorist", description: "Creative hair coloring services to transform your look with vibrant hues." },
+      { img: Hair1, title: "Sophia", profession: "Hair Stylist", description: "Expert hair styling services to give you the perfect look for any occasion." },
+      { img: Hair2, title: "Emma", profession: "Beautician", description: "Comprehensive beauty treatments to enhance your natural beauty." },
+      { img: Hair3, title: "Olivia", profession: "Makeup Artist", description: "Professional makeup services tailored to your unique style and preferences." },
+      { img: Hair4, title: "Isabella", profession: "Skin Care Specialist", description: "Advanced skin care treatments to rejuvenate and refresh your skin." },
+      { img: Hair5, title: "Mia", profession: "Nail Technician", description: "Stylish nail services, including manicures, pedicures, and nail art." },
+      { img: Hair6, title: "Liam", profession: "Hair Colorist", description: "Creative hair coloring services to transform your look with vibrant hues." },
     ];
   
     const visibleSlides = 3;

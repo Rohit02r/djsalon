@@ -74,3 +74,46 @@
   
 
 
+/* Products.css */
+.heart-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.heart-icon.fas {
+  color: red;
+}
+
+.heart-icon:active {
+  transform: scale(1.2);
+}
+/* Products.css */
+
+#favorite-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  height: 20px;
+  width: 20px;
+  color: black; /* Default color */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth color and transform transitions */
+}
+
+.favorite-icon.fas {
+  color: red; /* Color for active state */
+}
+
+#favorite-icon:hover {
+  color: darkred; /* Darker red on hover */
+}
+
+.favorite-icon:active {
+  transform: scale(1.2); /* Enlarge when clicked */
+}

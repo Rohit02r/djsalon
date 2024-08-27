@@ -8,12 +8,14 @@ import BodyLotion from '../../assests/Products/bodylotion.jpg'; // Adjust the pa
 import NeemFaceWash from '../../assests/Products/aleovera.jpg'; // Adjust the path as needed
 import TermericFaceWash from '../../assests/Products/termeric.jpg';
 
-const products = [{
+const products = [
+  {
     id: 'product1',
     img: Shampoo,
     title: 'Shampoo',
     description: 'Nourishing shampoo for healthy hair.',
     price: 299,
+    type: 'product',
   },
   {
     id: 'product2',
@@ -21,6 +23,7 @@ const products = [{
     title: 'Face Cream',
     description: 'Hydrating face cream for a radiant complexion.',
     price: 499,
+    type: 'product',
   },
   {
     id: 'product3',
@@ -28,6 +31,7 @@ const products = [{
     title: 'Beard Oil',
     description: 'Softens and conditions your beard.',
     price: 399,
+    type: 'product',
   },
   {
     id: 'product4',
@@ -35,6 +39,7 @@ const products = [{
     title: 'Hair Oil',
     description: 'Revitalizing oil for stronger hair.',
     price: 349,
+    type: 'product',
   },
   {
     id: 'product5',
@@ -42,6 +47,7 @@ const products = [{
     title: 'Comb',
     description: 'High-quality comb for all hair types.',
     price: 149,
+    type: 'product',
   },
   {
     id: 'product6',
@@ -49,6 +55,7 @@ const products = [{
     title: 'Sunscreen',
     description: 'Protects your skin from harmful UV rays.',
     price: 599,
+    type: 'product',
   },
   {
     id: 'product7',
@@ -56,6 +63,7 @@ const products = [{
     title: 'Body Lotion',
     description: 'Moisturizing lotion for smooth skin.',
     price: 399,
+    type: 'product',
   },
   {
     id: 'product8',
@@ -63,6 +71,7 @@ const products = [{
     title: 'Neem Face Wash',
     description: 'Cleansing face wash for a fresh feel.',
     price: 249,
+    type: 'product',
   },
   {
     id: 'product9',
@@ -70,8 +79,8 @@ const products = [{
     title: 'Termeric Face Wash',
     description: 'Revitalizing eye cream to reduce dark circles.',
     price: 699,
+    type: 'product',
   },
 ];
-  
-  export default products;
-  
+
+export default products;

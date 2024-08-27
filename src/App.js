@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from 'styled-components';
 import StickyNavbar from './components/StickyNavbar';
 import { CartProvider } from './components/CartContext';
+import { FavoritesProvider } from './components/FavouritesContext';
 import Cart from './components/Cart';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -15,8 +16,10 @@ import FAQ from './components/sidebar/FAQ'
 import Checkout from './components/Checkout';
 import SearchResults from './components/SearchResults';
 import Account from './components/sidebar/Account';
+import FavoritesList from './components/FavouritesList';
 import { DarkModeProvider } from './components/Darkmode';
 import './App.css'
+import ScrollToTop from './components/ScrolltoTop';
 
 const theme = {
   colors: {
@@ -36,27 +39,31 @@ const user = {
 function App() {
   return (
     <DarkModeProvider>
-      <CartProvider>
-        <ThemeProvider theme={theme}>
-          <Router basename="/djsalon">
-            <StickyNavbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/service-details" element={<ServiceDetails/>} />
-              <Route path="/products" element={<Products />} />
-              <Route path="/products/:productName" element={<ProductDetails />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/account" element={<Account user={user} />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/search" element={<SearchResults />} />
-            </Routes>
-          </Router>
-        </ThemeProvider>
-      </CartProvider>
+      <FavoritesProvider>
+        <CartProvider>
+          <ThemeProvider theme={theme}>
+            <Router basename="/djsalon">
+              <StickyNavbar />
+              <ScrollToTop /> {/* Ensure ScrollToTop is placed inside Router */}
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/service-details/:serviceName" element={<ServiceDetails />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:productName" element={<ProductDetails />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/favorites" element={<FavoritesList />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/account" element={<Account user={user} />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/search" element={<SearchResults />} />
+              </Routes>
+            </Router>
+          </ThemeProvider>
+        </CartProvider>
+      </FavoritesProvider>
     </DarkModeProvider>
   );
 }
