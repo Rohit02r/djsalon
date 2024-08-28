@@ -37,10 +37,11 @@
 }
 
 .btn-secondary.book-button {
-  background-color: #007bff;
-  border: none;
+  background-color: #7A1CAC;
+    border-color: #7A1CAC;
+    color: white;
 }
 
 .btn-secondary.book-button:hover {
-  background-color: #0056b3;
+  background-color:  #5f1885;;
 }

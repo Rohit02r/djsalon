@@ -31,7 +31,7 @@ const BookingForm = ({ service }) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group">
-        <label>Service</label>
+        <label className='fla'>Service</label>
         <input
           type="text"
           className={`fc ${errors.serviceName ? 'is-invalid' : ''}`}
@@ -42,7 +42,7 @@ const BookingForm = ({ service }) => {
         <div className="invalid-feedback">{errors.serviceName?.message}</div>
       </div>
       <div className="form-group">
-        <label>Name</label>
+        <label className='fla'>Name</label>
         <input
           type="text"
           className={`fc ${errors.name ? 'is-invalid' : ''}`}
@@ -52,7 +52,7 @@ const BookingForm = ({ service }) => {
       </div>
       
       <div className="form-group">
-        <label>Phone</label>
+        <label className='fla'>Phone</label>
         <input
           type="tel"
           className={`fc ${errors.phone ? 'is-invalid' : ''}`}
@@ -61,7 +61,7 @@ const BookingForm = ({ service }) => {
         <div className="invalid-feedback">{errors.phone?.message}</div>
       </div>
       <div className="form-group">
-        <label>Date and Time</label>
+        <label className='fla'>Date and Time</label>
         <input
           type="datetime-local"
           className={`fc ${errors.datetime ? 'is-invalid' : ''}`}

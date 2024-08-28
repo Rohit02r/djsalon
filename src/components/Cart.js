@@ -1,21 +1,37 @@
-// src/components/Cart.js
 import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from './CartContext';
-import { Link } from 'react-router-dom';
 import './Cart.css'; // Import CSS for styling
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
+  const navigate = useNavigate(); // Initialize the navigate hook
+
+  // Function to convert the product title to a URL-friendly format
+  const formatTitleForURL = (title) => {
+    return title.toLowerCase().replace(/\s+/g, '-');
+  };
+
+  // Function to handle navigation when a cart item is clicked
+  const handleItemClick = (item) => {
+    navigate(`/products/${formatTitleForURL(item.product.title)}`, {
+      state: { product: item.product },
+    });
+  };
 
   return (
     <div className="container py-5">
       <h2>Your Cart</h2>
       {cart.length === 0 ? (
-        <p>Your cart is empty. <Link to="/">Go back to shop</Link></p>
+        <p>Your cart is empty. <a href="/djsalon/products">Go back to shop</a></p>
       ) : (
         <div className="cart-items">
           {cart.map((item, index) => (
-            <div key={index} className="cart-item card mb-4">
+            <div
+              key={index}
+              className="cart-item card mb-4 cart-item-link"
+              onClick={() => handleItemClick(item)}
+            >
               <div className="cart-item-content">
                 <div className="cart-item-image-title">
                   <img src={item.product.img} alt={item.product.title} className="card-img" />
@@ -29,7 +45,7 @@ const Cart = () => {
               </div>
             </div>
           ))}
-          <button className="btn btn-primary mt-4">Proceed to Checkout</button>
+          <button className="btc mt-2">Proceed to Checkout</button>
         </div>
       )}
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FAQ.css';
+import Footer from '../Footer';
 
 // FAQ data
 const faqs = [
@@ -43,6 +44,7 @@ const FAQ = () => {
   };
 
   return (
+    <div>
     <div className="faq-section">
       <h2>Frequently Asked Questions</h2>
       <div className='search'>
@@ -61,6 +63,10 @@ const FAQ = () => {
           </li>
         ))}
       </ul>
+    </div>
+    
+    <Footer/>
+   
     </div>
   );
 };

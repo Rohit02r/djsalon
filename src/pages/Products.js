@@ -27,7 +27,7 @@ const Products = () => {
     <div>
       <section id="products" className="products-section py-5">
         <div className="container">
-          <h2>Our Products</h2>
+          <h2 className='fs-2'>Our Products</h2>
           <div className="row">
             {products.map((product) => (
               <div

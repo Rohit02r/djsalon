@@ -59,3 +59,26 @@
     width: 35%;
     margin:0 32.5%;
   }
+
+  .foc{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100; 
+  }
+  .footer-container {
+  position: relative;
+  width: 100%;
+}
+
+.footer-container.sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: block; /* Show when sticky */
+  z-index: 100; /* Ensure it stays above other content */
+  background-color: #333; /* Ensure it has a background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

@@ -71,8 +71,8 @@ const handleSuggestionClick = (item) => {
         <div className="container-fluid">
           <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
             <img src={Logo} alt="Logo" width="40" height="40" className="mr-2" />
-            <span style={{ color: '#7A1CAC', fontWeight: 'bold', marginLeft: '4px' }}>DJ</span>
-            <span style={{ color: '#000' }}> Salon</span>
+            <span style={{ color: '#7A1CAC', fontWeight: 'bold', marginLeft: '4px' }} className='fs-4 '>DJ</span>
+            <span style={{ color: '#000' }} className='fs-4 '> Salon</span>
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -131,9 +131,9 @@ const handleSuggestionClick = (item) => {
             placeholder="Search"
             value={searchTerm}
             onChange={handleSearchChange}
-            className="w-100"
+            className=" sms"
           />
-          <Button type="submit" variant="outline-success" className="ml-2">Search</Button>
+          <Button type="submit" variant="outline-success" className="bts ml-2">Search</Button>
         </Form>
         {suggestions.length > 0 && (
           <Dropdown.Menu ref={suggestionsRef} show className="search-suggestions-mobile">

@@ -40,9 +40,9 @@ const ProductDetails = () => {
           <p>{product.description}</p>
           <p><strong>Price: ₹ {product.price}</strong></p>
           <div className="quantity-controls">
-            <button className="btn btn-secondary" onClick={handleDecrement}>-</button>
+            <button className="btn bti" onClick={handleDecrement}>-</button>
             <span className="quantity mx-3">{quantity}</span>
-            <button className="btn btn-secondary" onClick={handleIncrement}>+</button>
+            <button className="btn bti" onClick={handleIncrement}>+</button>
           </div>
           <button className="btn btn-primary mt-4" onClick={handleAddToCart}>
             Add to Cart

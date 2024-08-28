@@ -4,7 +4,7 @@
 }
 
 /* Contact Form Styling */
-.contact-form {
+.cf {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -36,6 +36,7 @@
 
 /* Button Styling */
 .buton {
+  width: 80%;
   margin-top: 10px;
 }
 
@@ -68,4 +69,7 @@ h2{
 }
 body.dark-mode .terms-card{
   background-color: rgba(122, 28, 172, 0.486);
+}
+.la{
+  margin: 0%;
 }

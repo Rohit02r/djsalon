@@ -26,6 +26,7 @@
 }
 
 .nav-link {
+
   margin: 0 10px; /* Adds space around each link (left and right) */
   transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background */
 }
@@ -54,8 +55,10 @@
 
 .bts {
   margin: 0% 5%;
+  padding-left:  5px;
+  padding-right:  5px;
   color:#7A1CAC;
-  border: 2px solid #7A1CAC;
+  border: 1px solid #7A1CAC;
   /* margin-left: 10px; Space around the button */
 }
 
@@ -63,7 +66,7 @@
   margin: 0% 5%;
   color:#f6f5f7;
   background-color: #7A1CAC;
-  border: 2px solid #7A1CAC;
+  border: 1px solid #7A1CAC;
   /* margin-left: 10px; Space around the button */
 }
 /* Light Mode Styles */
@@ -91,7 +94,7 @@
 }
 
 .dark-mode .navbar .navbar-nav .nav-link {
-  color: #080808; /* Darker text for links */
+  color: #fdfcfc; /* Darker text for links */
 }
 
 .dark-mode .navbar .navbar-nav .nav-link:hover {
@@ -189,4 +192,8 @@
 }
 .icc{
   margin: 0% 10px 0 0;
+}
+.sms{
+  width: 100%;
+  
 }

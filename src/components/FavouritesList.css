@@ -1,19 +1,21 @@
 /* FavoritesPage.css */
 
-.favorites-page {
+.FavouritesList {
     padding: 20px;
   }
   
-  .favorites-page h1 {
-    margin-bottom: 20px;
+  .FavouritesList h1 {
+    justify-content: center;
+    align-items: center;
+   margin: 0 50%;
   }
   
-  .favorites-page ul {
+  .FavouritesList ul {
     list-style: none;
     padding: 0;
   }
   
-  .favorites-page li {
+  .FavouritesList li {
     margin: 10px 0;
   }
   

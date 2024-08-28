@@ -57,7 +57,7 @@ body.dark-mode textarea::placeholder {
 /* Sidebar styles */
 .sidebar {
   position: fixed;
-  top: 10%;
+  top: 9%;
   right: 0;
   width: 250px;
   height: 100%;
@@ -136,4 +136,9 @@ body.dark-mode textarea::placeholder {
 .sidebar-menu ul li {
   padding: 8px 0;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .sidebar {
+    top: 18%; /* Start from 20% from the top on mobile view */
+  }
 }

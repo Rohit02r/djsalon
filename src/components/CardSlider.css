@@ -41,7 +41,7 @@
 }
 
 .arrow {
-  background: none;
+  background: rgba(128, 128, 128, 0.5);
   border: none;
   font-size: 2rem;
   color: #333;
@@ -49,14 +49,14 @@
   z-index: 1;
   margin: 0 20px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 50%; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 5px
 }
 
 .arrow:hover {
-  background-color: #007bff;
+  background-color: #7A1CAC;;
   color: white;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ 
 }
 
 .left-arrow {

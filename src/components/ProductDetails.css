@@ -101,3 +101,16 @@ p{
   justify-content: center;
   width: 100%;
 }
+.bti{
+  /* margin: 0% 5%;
+  padding-left:  5px;
+  padding-right:  5px; */
+  color:#7A1CAC;
+  border: 1px solid #7A1CAC;
+}
+
+.bti:hover{
+   color: white;
+   background-color:#7A1CAC ;
+
+}

@@ -22,8 +22,8 @@ const Footer = () => {
             <h5 className="footer-heading">Quick Links</h5>
             <ul className="footer-links">
               <li><a href="/djsalon/about" className="footer-link">About Us</a></li>
-              <li><a href="/services" className="footer-link">Services</a></li>
-              <li><a href="/contact" className="footer-link">Contact</a></li>
+              <li><a href="/djsalon/services" className="footer-link">Services</a></li>
+              <li><a href="/djsalon/contact" className="footer-link">Contact</a></li>
             </ul>
           </div>
 

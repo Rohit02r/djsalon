@@ -14,10 +14,10 @@ const FavoritesList = () => {
 
   return (
     <div className="favoritesList">
-      <h1>Your Favorites</h1>
+      <h1 className='text-center mt-3'>Your Favorites</h1>
       <div className="results-grid">
         {favoriteProducts.length === 0 ? (
-          <p>No favorites added yet.</p>
+          <p className='text-center mt-5 fs-4'>No favorites added yet.</p>
         ) : (
           favoriteProducts.map(product => (
             <div

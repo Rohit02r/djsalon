@@ -10,7 +10,7 @@ import Makeup from '../assests/Slider/Makeup.jpg';
 const OffersCarousel = () => {
   return (
     <Carousel className='offers-carousel m-5 px-5'>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={4000}>
         <img
           className="d-block w-100 rounded-3 offer-image"
           src={Barber1}
@@ -21,7 +21,7 @@ const OffersCarousel = () => {
           <p>Get 20% off on all haircuts this weekend!</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={4000}>
         <img
           className="d-block w-100 rounded-3 offer-image"
           src={Hairstyle}
@@ -32,7 +32,7 @@ const OffersCarousel = () => {
           <p>Free hair color with every manicure!</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={4000}>
         <img
           className="d-block w-100 rounded-3 offer-image"
           src={Barber2}
@@ -43,7 +43,7 @@ const OffersCarousel = () => {
           <p>50% off on all hair treatments!</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={1000}>
+      <Carousel.Item interval={4000}>
         <img
           className="d-block w-100 rounded-3 offer-image"
           src={Makeup}

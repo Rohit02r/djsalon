@@ -7,15 +7,15 @@ const Contact = () => {
     <div className="contact-page">
       <section id="contact-info" className="py-5">
         <div className="container">
-          <h2 className='mb-4'>Contact Us</h2>
+          <h2 className='mb-4 fs-2'>Contact Us</h2>
           
           <div className="row terms-card">
             <div className="col-md-6 ">
-              <div className="contact-form">
+              <div className="cf">
                 <h3>Send Us a Message</h3>
                 <form>
                   <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name" className='la'>Name</label>
                     <input type="text" id="name" className="form-control" required  placeholder="Enter your name"/>
                   </div>
                   <div className="form-group">
@@ -47,7 +47,7 @@ const Contact = () => {
 
       <section id="terms-conditions" className="py-5">
         <div className="container">
-          <h2 className='mb-4'>Terms and Conditions</h2>
+          <h2 className='mb-4 fs-2'>Terms and Conditions</h2>
           <div className="terms-card">
             <h4>1. Products and Services</h4>
             <p>
