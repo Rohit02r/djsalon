@@ -9,7 +9,7 @@ import Makeup from '../assests/Slider/Makeup.jpg';
 
 const OffersCarousel = () => {
   return (
-    <Carousel className='offers-carousel m-5 px-5'>
+    <Carousel className='offers-carousel m-5 px-3'>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100 rounded-3 offer-image"

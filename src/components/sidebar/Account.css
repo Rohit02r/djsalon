@@ -35,11 +35,20 @@ body.dark-mode .terms-car {
 
 /* Buttons */
 .account-btn {
-  width: 30%;
+  margin-left: 7%;
+  width: 35%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.account-btn:hover {
+  background-color: #5e1685;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .bta {
-  width: 20%;
+  margin-left: 7%;
+  width: 35%;
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
@@ -93,12 +102,13 @@ textarea {
 
 /* Dark Mode Toggle Switch */
 .theme-checkbox {
+  background: #333;
   padding-bottom: 0px;
   position: relative;
   width: 50px;
   height: 24px;
   appearance: none;
-  background: #ccc;
+  
   outline: none;
   border-radius: 12px;
   cursor: pointer;
@@ -106,7 +116,7 @@ textarea {
 }
 
 .theme-checkbox:checked {
-  background: #7A1CAC;
+  background: #050505;
 }
 
 .theme-checkbox::before {
@@ -154,9 +164,9 @@ body.dark-mode .theme-checkbox + span {
 /* Additional styling for mobile view */
 @media (max-width: 600px) {
   .btav,
-  .bta,
-  .account-btn {
-    width: 100px; /* Adjust button width for mobile view */
+  .bta
+   {
+    width: 80%; /* Adjust button width for mobile view */
     padding: 7px 0; /* Adjust padding for smaller buttons */
   }
 

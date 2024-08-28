@@ -14,11 +14,11 @@ const Home = () => {
     <div>
       <OffersCarousel />
       
-      <div className="container mt-5">
+      <div className="container  dm mt-5">
         {/* Introductory Text as a Card */}
-        <div className="card  shadow p-4 mb-5">
+        <div className="card hdm shadow p-4 mb-5">
           <h3 className="card-title text-center">Welcome to DJ Saloon</h3>
-          <p className="card-text">
+          <p className="card-text fs-6">
             Where beauty meets precision. Our expert stylists and beauticians are dedicated to providing top-notch services in a relaxing and friendly environment. Whether you're looking for a fresh haircut, a rejuvenating massage, or a complete makeover, we tailor every service to meet your unique needs. Discover the perfect blend of luxury and comfort at DJ Saloon, where your satisfaction is our priority.
           </p>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react';
+import React, { useState,useRef ,useEffect} from 'react';
 
 import {Navbar,Nav,Form,FormControl,Button,Dropdown} from 'react-bootstrap';
 
@@ -6,8 +6,10 @@ import {useNavigate,NavLink} from 'react-router-dom';
 import { useDarkMode } from './Darkmode';
 import products from '../components/data/productsd'; // Import your products data
 import services from '../components/data/servicesd';
-import CartIcon from '../assests/Icon/s.svg'; // Adjust the path as needed
-import ProfileIcon from '../assests/Icon/a.svg'; // Adjust the path as needed
+import CartIconLight from '../assests/Icon/s.svg'; // Adjust the path as needed
+import ProfileIconLight from '../assests/Icon/a.svg';
+import CartIconDark from '../assests/Icon/shd.svg' // Adjust the path as needed
+import ProfileIconDark from '../assests/Icon/accd.svg'// Adjust the path as needed
 import Sidebar from './Sidebar'; // Import the Sidebar component
 import './StickyNavbar.css';
 import Logo from '../assests/Logo/croplogo.png'
@@ -18,10 +20,26 @@ const StickyNavbar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
-  const { darkMode } = useDarkMode();
+  const { darkMode } = useDarkMode(); // Fetch dark mode state from hook
   const sidebarRef = useRef(null);
   const suggestionsRef = useRef(null);
-  const searchBoxRef = useRef(null); // New ref for the search box
+  const searchBoxRef = useRef(null);
+
+  // States to hold the icon sources
+  const [cartIcon, setCartIcon] = useState(CartIconLight);
+  const [profileIcon, setProfileIcon] = useState(ProfileIconLight);
+
+  // useEffect to update icons when darkMode changes
+  useEffect(() => {
+    console.log("Dark mode state changed: ", darkMode); // Log the darkMode state
+    if (darkMode) {
+      setCartIcon(CartIconDark);
+      setProfileIcon(ProfileIconDark);
+    } else {
+      setCartIcon(CartIconLight);
+      setProfileIcon(ProfileIconLight);
+    }
+  }, [darkMode]);
 
   const handleSearchChange = (event) => {
     const term = event.target.value;
@@ -47,32 +65,30 @@ const StickyNavbar = () => {
     setSuggestions([]);
   };
 
-  // Example for navigating to ProductDetails with product state
-const handleSuggestionClick = (item) => {
-  setSearchTerm(item.title);
+  const handleSuggestionClick = (item) => {
+    setSearchTerm(item.title);
 
-  if (item.type === 'product') {
-    navigate(`/products/${item.title.toLowerCase().replace(/ /g, '-')}`, { state: { product: item } });
-  } else if (item.type === 'service') {
-    navigate(`/service-details/${item.title.toLowerCase().replace(/ /g, '-')}`);
-  } else {
-    console.error('Unknown type:', item.type);
-  }
-  setSuggestions([]);
-};
-
+    if (item.type === 'product') {
+      navigate(`/products/${item.title.toLowerCase().replace(/ /g, '-')}`, { state: { product: item } });
+    } else if (item.type === 'service') {
+      navigate(`/service-details/${item.title.toLowerCase().replace(/ /g, '-')}`);
+    } else {
+      console.error('Unknown type:', item.type);
+    }
+    setSuggestions([]);
+  };
 
   const handleProfileClick = () => setIsSidebarOpen(true);
   const handleCloseSidebar = () => setIsSidebarOpen(false);
 
   return (
     <div className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
-      <Navbar expand="lg" className="shadow-lg p-2">
+      <Navbar expand="lg" className="shadow p-2">
         <div className="container-fluid">
           <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
-            <img src={Logo} alt="Logo" width="40" height="40" className="mr-2" />
-            <span style={{ color: '#7A1CAC', fontWeight: 'bold', marginLeft: '4px' }} className='fs-4 '>DJ</span>
-            <span style={{ color: '#000' }} className='fs-4 '> Salon</span>
+            <img src={Logo} alt="Logo" width="40" height="40" className="mr-2 br" />
+            <span style={{ color: '#7A1CAC', fontWeight: 'bold', marginLeft: '4px' }} className='fs-4 br'>DJ</span>
+            <span style={{ color: '#000' }} className='fs-4 br'> Salon</span>
           </NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -94,7 +110,7 @@ const handleSuggestionClick = (item) => {
                   placeholder="Search"
                   value={searchTerm}
                   onChange={handleSearchChange}
-                  ref={searchBoxRef} // Attach the ref to the search box
+                  ref={searchBoxRef}
                 />
                 <Button type="submit" variant="outline-success" className='bts'>Search</Button>
                 {suggestions.length > 0 && (
@@ -114,24 +130,34 @@ const handleSuggestionClick = (item) => {
               </Form>
               <Nav className="ml-auto d-flex align-items-center d-none d-lg-flex">
                 <NavLink to="/cart" className="d-flex align-items-center icc">
-                  <img src={CartIcon} alt="Cart" width="20" height="20" />
+                  <img 
+                    src={cartIcon} 
+                    alt="Cart" 
+                    width="20" 
+                    height="20" 
+                  />
                 </NavLink>
                 <Nav.Link onClick={handleProfileClick} className="d-flex align-items-center icp">
-                  <img src={ProfileIcon} alt="Profile" width="22" height="22" />
+                  <img 
+                    src={profileIcon} 
+                    alt="Profile" 
+                    width="22" 
+                    height="22" 
+                  />
                 </Nav.Link>
               </Nav>
             </div>
           </Navbar.Collapse>
         </div>
       </Navbar>
-      <div className="mobile-search d-flex d-lg-none px-3 py-2">
-        <Form onSubmit={handleSearchSubmit} className="form-inline w-100">
+      <div className="mobile-search d-flex d-lg-none pe-3 py-2 shadow">
+        <Form onSubmit={handleSearchSubmit} className="form-inline w-100 d-flex">
           <FormControl
             type="text"
             placeholder="Search"
             value={searchTerm}
             onChange={handleSearchChange}
-            className=" sms"
+            className="sms flex-grow-1"
           />
           <Button type="submit" variant="outline-success" className="bts ml-2">Search</Button>
         </Form>
@@ -148,12 +174,22 @@ const handleSuggestionClick = (item) => {
             ))}
           </Dropdown.Menu>
         )}
-        <div className="mobile-icons d-flex justify-content-end align-items-center mt-2 w-100">
+        <div className="mobile-icons d-flex justify-content-end align-items-center mt-2 w-100 ">
           <NavLink to="/cart" className="d-flex align-items-center">
-            <img src={CartIcon} alt="Cart" width="20" height="20" />
+            <img 
+              src={cartIcon} 
+              alt="Cart" 
+              width="20" 
+              height="20" 
+            />
           </NavLink>
           <Nav.Link onClick={handleProfileClick} className="d-flex align-items-center ml-3">
-            <img src={ProfileIcon} alt="Profile" width="22" height="22" />
+            <img 
+              src={profileIcon} 
+              alt="Profile" 
+              width="22" 
+              height="22" 
+            />
           </Nav.Link>
         </div>
       </div>

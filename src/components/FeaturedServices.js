@@ -54,7 +54,7 @@ const FeaturedServices = () => {
             onClick={() => handleCardClick(service.route)} 
             style={{ cursor: 'pointer' }}
           >
-            <div className="card text-center h-100 shadow-sm">
+            <div className="card text-center h-100 shadow border border-2 ">
               <img src={service.image} className="card-img-top" alt={service.title} />
               <div className="card-body">
                 <h5 className="card-title">{service.title}</h5>

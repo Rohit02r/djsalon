@@ -1,8 +1,43 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as Yup from 'yup';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../components/Footer';
-import './Contact.css'; // Import the corresponding CSS file
+import './Contact.css';
+
+// Validation schema using Yup
+const validationSchema = Yup.object().shape({
+  name: Yup.string().required('Name is required'),
+  phone: Yup.string()
+    .matches(/^[0-9]+$/, 'Phone number is not valid')
+    .required('Phone number is required'),
+  message: Yup.string().required('Message is required'),
+});
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(validationSchema),
+  });
+
+  const onSubmit = (data) => {
+    console.log(data);
+    toast.success('Message sent successfully!', {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   return (
     <div className="contact-page">
       <section id="contact-info" className="py-5">
@@ -10,23 +45,44 @@ const Contact = () => {
           <h2 className='mb-4 fs-2'>Contact Us</h2>
           
           <div className="row terms-card">
-            <div className="col-md-6 ">
+            <div className="col-md-6">
               <div className="cf">
                 <h3>Send Us a Message</h3>
-                <form>
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="form-group">
                     <label htmlFor="name" className='la'>Name</label>
-                    <input type="text" id="name" className="form-control" required  placeholder="Enter your name"/>
+                    <input
+                      type="text"
+                      id="name"
+                      className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+                      {...register('name')}
+                      placeholder="Enter your name"
+                    />
+                    <div className="invalid-feedback">{errors.name?.message}</div>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="tel">Phone Number</label>
-                    <input type="text" id="number" className="form-control" required placeholder='Enter Mobile Number' />
+                    <label htmlFor="phone" className='la'>Phone Number</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
+                      {...register('phone')}
+                      placeholder="Enter Mobile Number"
+                    />
+                    <div className="invalid-feedback">{errors.phone?.message}</div>
                   </div>
                   <div className="form-group">
-                    <label htmlFor="message">Message</label>
-                    <textarea id="message" className="form-control" rows="4" required placeholder='Enter Message'></textarea>
+                    <label htmlFor="message" className='la'>Message</label>
+                    <textarea
+                      id="message"
+                      className={`form-control ${errors.message ? 'is-invalid' : ''}`}
+                      {...register('message')}
+                      rows="4"
+                      placeholder="Enter Message"
+                    ></textarea>
+                    <div className="invalid-feedback">{errors.message?.message}</div>
                   </div>
-                  <button type="submit" className="buton btn btn-primary">Send Message</button>
+                  <button type="submit" className="btcc">Send Message</button>
                 </form>
               </div>
             </div>
@@ -34,8 +90,8 @@ const Contact = () => {
               <div className="contact-message">
                 <h3>Your Feedback Matters</h3>
                 <p>
-            We are here to assist you. If you have any questions or need support, please reach out to us through the following contact details or fill out the contact form below.
-          </p>
+                  We are here to assist you. If you have any questions or need support, please reach out to us through the following contact details or fill out the contact form below.
+                </p>
                 <p>
                   We value your feedback and would love to hear your thoughts on our services. Please use the form on the left to send us your comments, suggestions, or any other inquiries. We are always here to help and improve our offerings based on your input.
                 </p>
@@ -86,6 +142,7 @@ const Contact = () => {
       </section>
 
       <Footer />
+      <ToastContainer />
     </div>
   );
 };

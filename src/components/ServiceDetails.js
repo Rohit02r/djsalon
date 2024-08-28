@@ -32,7 +32,7 @@ const ServiceDetails = () => {
           </div>
           <div className="sddesc">
             <p>{service.description}</p>
-            <button className="btn btn-primary mt-4 sdb" onClick={handleBookAppointment}>
+            <button className="btn btsd mt-4 sdb" onClick={handleBookAppointment}>
               Book Appointment
             </button>
           </div>

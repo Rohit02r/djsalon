@@ -38,7 +38,7 @@
 
 .nav-link:hover {
   color: #7A1CAC !important; /* Change text color on hover */
-  background-color: rgba(122, 28, 172, 0.1); /* Slightly darker background on hover */
+   /* Slightly darker background on hover */
 }
 
 .form-inline {
@@ -50,7 +50,7 @@
 .search-form {
   margin: 0% 2%;
 
-  width: 300px;
+  min-width: 300px;
 }
 
 .bts {
@@ -89,7 +89,7 @@
 
 /* Dark Mode Styles */
 .dark-mode .navbar {
-  background-color: #343a40; /* Dark background */
+  background-color: #4f5357; /* Dark background */
   color: #7A1CAC; /* Light text */
 }
 
@@ -99,7 +99,7 @@
 
 .dark-mode .navbar .navbar-nav .nav-link:hover {
   color: #7A1CAC !important; /* Change text color on hover in dark mode */
-  background-color: rgba(122, 28, 172, 0.1); /* Slightly darker background on hover in dark mode */
+   /* Slightly darker background on hover in dark mode */
 }
 
 /* Hide the search bar in the navbar for mobile */
@@ -111,13 +111,16 @@
 
 /* Remove background color for mobile search bar */
 .mobile-search {
-  width: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-grow: 2;
   background-color: transparent; /* Remove background color */
 }
 
 /* Align search form, cart, and profile icons in a row */
 .mobile-search .form-inline {
   display: flex;
+  
   justify-content: space-between;
   width: 100%;
 }
@@ -147,6 +150,24 @@
  
 }
 
+body.dark-mode .search-suggestions{
+  background-color: #363535;
+  color: white;
+  position: absolute;
+  margin-left: 60%;
+  width: 320px;
+  
+ }
+
+ body.dark-mode .search-suggestions:hover{
+  background-color: #5e5b5b;
+  color: white;
+  position: absolute;
+  margin-left: 60%;
+  width: 320px;
+  
+ }
+
 .ss:hover{
   background-color: #c7c5c5 ; /* Light gray background on hover */
   color: #7A1CAC;
@@ -170,6 +191,19 @@
   z-index: 1000;
 }
 
+body.dark-mode .search-suggestions-mobile{
+  background-color: #363535;
+  color: white;
+
+  
+ }
+
+ body.dark-mode .search-suggestions-mobile:hover{
+  background-color: #5e5b5b;
+  color: white;
+ 
+  
+ }
 .search-suggestions-mobile .dropdown-item {
   display: flex;
   align-items: center;
@@ -196,4 +230,8 @@
 .sms{
   width: 100%;
   
+}
+
+.br{
+ margin-bottom: 7px;
 }

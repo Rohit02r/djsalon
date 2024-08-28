@@ -33,7 +33,7 @@ const Testimonials = () => {
       <div className="row">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm">
+            <div className="card h-100 shadow-lg border border-2">
               <div className="card-body text-center">
                 <img
                   src={testimonial.image}

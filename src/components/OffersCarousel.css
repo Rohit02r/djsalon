@@ -31,7 +31,7 @@
   /* Responsive design for smaller screens */
   @media (max-width: 768px) {
     .offers-carousel .offer-image {
-      height: 300px; /* Reduce the height for smaller screens */
+      height: 350px; /* Reduce the height for smaller screens */
     }
   
     .offers-carousel .offer-caption h3 {
@@ -45,7 +45,9 @@
   
   @media (max-width: 480px) {
     .offers-carousel .offer-image {
-      height: 200px; /* Further reduce the height for very small screens */
+      
+      height: 400px;
+      width: 400px; /* Further reduce the height for very small screens */
     }
   
     .offers-carousel .offer-caption h3 {

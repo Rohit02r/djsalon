@@ -1,84 +1,113 @@
+/* General Page Styles */
+body {
+  background-color: #ffffff; /* Default light mode background */
+  transition: background-color 0.3s ease-in-out;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e; /* Dark mode background */
+  color: #f8f9fa; /* Light text for dark mode */
+}
+
 /* Home Page General Styles */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Featured Services Section */
-  .featured-services {
-    margin-top: 50px;
-  }
-  
-  .featured-services .card {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .featured-services .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .featured-services .card-body {
-    padding: 20px;
-  }
-  
-  .featured-services .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .featured-services .card-text {
-    font-size: 1rem;
-    color: #6c757d;
-  }
-  
-  /* Testimonials Section */
-  .testimonials {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  
-  .testimonials .card {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .testimonials .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .testimonials .card-body {
-    padding: 30px;
-  }
-  
-  .testimonials .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .testimonials .card-text {
-    font-size: 1rem;
-    color: #6c757d;
-    font-style: italic;
-  }
-  
-  /* Introductory Text (h3) Card */
-  .intro-card {
-    /* background-color: #f8f9fa; */
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .intro-card h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .intro-card p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    color: #495057;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Featured Services Section */
+.featured-services {
+  margin-top: 50px;
+}
+
+.featured-services .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.featured-services .card:hover {
+  transform: translateY(-5px);
+}
+
+.featured-services .card-body {
+  padding: 20px;
+}
+
+.featured-services .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.featured-services .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Testimonials Section */
+.testimonials {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.testimonials .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonials .card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonials .card-body {
+  padding: 30px;
+}
+
+.testimonials .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.testimonials .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Introductory Text (h3) Card */
+.intro-card {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.intro-card p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #495057;
+}
+
+/* Dark Mode Specific Styles */
+body.dark-mode .card,
+body.dark-mode .featured-services .card,
+body.dark-mode .testimonials .card,
+body.dark-mode .intro-card {
+  background-color: #2c2c2c; /* Darker background for cards */
+  color: #f8f9fa; /* Light text in cards for dark mode */
+}
+
+body.dark-mode .featured-services .card-text,
+body.dark-mode .testimonials .card-text,
+body.dark-mode .intro-card p {
+  color: #e0e0e0; /* Lighter text for better contrast in dark mode */
+}
+
+
+.hdm .dark-mode{
+  background-color: #1e1e1e;
+}

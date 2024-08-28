@@ -1,3 +1,4 @@
+/* General product image styling */
 .product-image {
   width: 100%;
   max-width: 250px;
@@ -6,6 +7,12 @@
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.7);
 }
 
+/* Dark mode product image styling */
+body.dark-mode .product-image {
+  box-shadow: 0 6px 10px -1px rgba(255, 255, 255, 0.2); /* Lighter shadow in dark mode */
+}
+
+/* Product details container */
 .product-details {
   margin-left: auto;
   margin-right: auto;
@@ -13,11 +20,13 @@
   justify-content: center;
 }
 
+/* Quantity controls container */
 .quantity-controls {
   text-align: center;
   justify-content: center;
 }
 
+/* Product description styling */
 .pddesc {
   padding: 20px 10px;
   justify-content: center;
@@ -25,6 +34,7 @@
   text-align: center;
 }
 
+/* Container for the entire product section */
 .cont {
   width: 100%;
   /* max-width: 700px; */
@@ -40,18 +50,39 @@
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.7);
 }
 
-.btn-primary {
+/* Dark mode container styling */
+body.dark-mode .cont {
+  background-color: #333; /* Dark background color */
+  box-shadow: 0 6px 10px -1px rgba(255, 255, 255, 0.2); /* Lighter shadow in dark mode */
+}
+
+/* Button primary styling */
+.btp {
   margin: 0 10%;
+  color: white;
   justify-content: center;
   background-color: #7A1CAC;
   border-color: #7A1CAC;
 }
 
-.btn-primary:hover {
+/* Dark mode primary button styling */
+body.dark-mode .btp {
+  background-color: #9c27b0;
+  border-color: #9c27b0;
+}
+
+.btp:hover {
+  color: white;
+  background-color: #5e1289;
+  border-color: #5e1289;
+}
+body.dark-mode .btp:hover {
+  color: white;
   background-color: #5e1289;
   border-color: #5e1289;
 }
 
+/* Product details alignment */
 .pdalign {
   margin: 10px;
   text-align: center;
@@ -68,16 +99,13 @@
   }
 
   .pdalign {
-    
     text-align: left;
     margin-right: 20px;
   }
 
   .pddesc {
     width: 100%;
-    
     justify-content: center;
-   
     padding: 0 20px;
     flex-grow: 1;
   }
@@ -97,20 +125,36 @@
     padding: 0 40px;
   }
 }
-p{
+
+/* Paragraph styling */
+p {
   justify-content: center;
   width: 100%;
 }
-.bti{
-  /* margin: 0% 5%;
-  padding-left:  5px;
-  padding-right:  5px; */
-  color:#7A1CAC;
+
+/* Button secondary styling */
+.bti {
+  color: #7A1CAC;
   border: 1px solid #7A1CAC;
 }
 
-.bti:hover{
-   color: white;
-   background-color:#7A1CAC ;
+/* Dark mode secondary button styling */
+body.dark-mode .bti {
+  color: #9c27b0;
+  border: 1px solid #9c27b0;
+}
 
+.bti:hover {
+  color: white;
+  background-color: #9129c9;
+}
+
+/* Dark mode hover state for secondary button */
+body.dark-mode .bti:hover {
+  color: white;
+  background-color: #812a91;
+}
+
+body.dark-mode .quantity{
+  color: white;
 }

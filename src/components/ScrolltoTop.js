@@ -36,7 +36,7 @@ const FloatingButtons = () => {
                 <img 
                     src={WhatsAppIcon} 
                     alt="WhatsApp" 
-                    onClick={() => window.open('https://wa.me/yourphonenumber', '_blank')} 
+                    onClick={() => window.open('https://wa.me/9360790829', '_blank')} 
                 />
             </div>
 

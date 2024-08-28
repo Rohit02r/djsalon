@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Modal } from 'react-bootstrap';
 import Footer from '../components/Footer';
-import BookingForm from '../components/BookingForm'; // Import your BookingForm component
-import './Services.css'; // Import the corresponding CSS file
-import 'aos/dist/aos.css'; // Import AOS styles
+import BookingForm from '../components/BookingForm';
+import './Services.css';
+import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 import services from '../components/data/servicesd'; // Adjust the path as needed
@@ -15,7 +15,6 @@ const Services = () => {
   const navigate = useNavigate();
 
   const handleCardClick = (serviceTitle) => {
-    // Navigate to the service details page with the service title as a parameter
     navigate(`/service-details/${serviceTitle.toLowerCase().replace(/ /g, '-')}`);
   };
 
@@ -53,7 +52,7 @@ const Services = () => {
                     <button 
                       className="btn btn-secondary book-button mt-2" 
                       onClick={(e) => {
-                        e.stopPropagation(); // Prevent card click event
+                        e.stopPropagation(); 
                         handleBookAppointment(service.title);
                       }}
                     >
@@ -70,7 +69,7 @@ const Services = () => {
             <Modal.Title>Book an Appointment for {selectedService}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <BookingForm service={selectedService} />
+            <BookingForm service={selectedService} onClose={handleCloseModal} />
           </Modal.Body>
         </Modal>
       </section>

@@ -97,6 +97,7 @@ body.dark-mode textarea::placeholder {
 }
 
 .sidebar-menu li a {
+  margin: 0 10px;
   text-decoration: none;
   color: #000; /* Light mode link color */
   display: block;
@@ -106,8 +107,9 @@ body.dark-mode textarea::placeholder {
 }
 
 .sidebar-menu li a:hover,
-.sidebar-menu li a.active {
-  background-color: #b4b5b6; /* Light mode hover and active color */
+.sidebar-menu li a.actives {
+  background-color: #b4b5b6;
+  color: white; /* Light mode hover and active color */
 }
 
 /* Dark mode sidebar styles */
@@ -124,8 +126,9 @@ body.dark-mode textarea::placeholder {
 }
 
 .dark-mode .sidebar-menu li a:hover,
-.dark-mode .sidebar-menu li a.active {
-  background-color: #555; /* Dark mode hover and active color */
+.dark-mode .sidebar-menu li a.actives {
+  background-color: #555; 
+  color: white;/* Dark mode hover and active color */
 }
 /* Sidebar.css */
 .sidebar-menu ul {

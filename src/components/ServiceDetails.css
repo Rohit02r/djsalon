@@ -42,13 +42,15 @@
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.7);
 }
 
-.btn-primary {
-width: 50%;
+.btsd {
+  color: white;
+min-width: 60%;
   background-color: #7A1CAC;
   border-color: #7A1CAC;
 }
 
-.btn-primary:hover {
+.btsd:hover {
+  color: white;
   background-color: #5e1289;
   border-color: #5e1289;
 }

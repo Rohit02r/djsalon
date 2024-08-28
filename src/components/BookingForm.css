@@ -1,24 +1,45 @@
+/* General Dark Mode Styling */
+body.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
 /* Container for the form */
 .booking-form-container {
-   width: 200px;
-   margin: 0 10%;
-     /* Set max width for the form */
-    /* margin: 10px auto; Center the form horizontally */
+    width: 200px;
+    margin: 0 10%;
     padding: 7px;
-    background-color: #fff; /* Background color for the form */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    height: 400px; /* Fixed height */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* Dark Mode: Container for the form */
+body.dark-mode .booking-form-container {
+    background-color: #2c2c2c;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Modal Background in Dark Mode */
+body.dark-mode .modal-content {
+    background-color: #2c2c2c;
+    border-color: #444; /* Adding border for better contrast */
+}
+
+/* Modal Header */
+body.dark-mode .modal-header, .modal-footer {
+    border-bottom-color: #444;
+    border-top-color: #444;
 }
 
 /* Styling for form groups */
 .form-group {
     margin-bottom: 10px;
     justify-content: center;
-    
 }
 
 /* Label styling */
@@ -29,18 +50,37 @@
     margin: 0 16%;
 }
 
+/* Dark Mode: Label styling */
+body.dark-mode .fla {
+    color: #f8f9fa; /* Light text color for dark mode */
+}
+
 /* Input and select styling */
 .fc {
     margin: 2% 10%;
     text-align: center;
     justify-content: center;
-    width: 80%;
-    /* margin: 0 20%; */
-    padding:  5px;
+    width: 70%;
+    padding: 5px;
     font-size: 16px;
     border-radius: 4px;
     border: 1px solid #ccc;
     transition: border-color 0.3s;
+    background-color: #fff; /* Light background for inputs */
+    color: #000; /* Dark text color for inputs */
+}
+
+/* Dark Mode: Input and select styling */
+body.dark-mode .fc {
+    background-color: #3a3a3a; /* Dark background for inputs */
+    color: #f8f9fa; /* Light text color for inputs */
+    border: 1px solid #555; /* Lighter border in dark mode */
+}
+
+/* Date and Time Picker Styling */
+body.dark-mode .fc[type="datetime-local"] {
+    background-color: #3a3a3a;
+    color: #f8f9fa;
 }
 
 /* Error styling */
@@ -48,20 +88,18 @@
     border-color: #dc3545;
 }
 
+/* Invalid feedback message styling */
 .invalid-feedback {
     color: #dc3545;
     font-size: 14px;
 }
 
 /* Submit button styling */
-.bt{
-   
-   justify-content: center;
- margin: 0 30%;
-   padding: 7px 70px;
-   background-color: #7A1CAC;
-   border-color: #7A1CAC;
-    
+.bt {
+    margin: 0 35% 1% 27%;
+    padding: 7px 49px;
+    background-color: #7A1CAC;
+    border-color: #7A1CAC;
     border: none;
     border-radius: 4px;
     color: white;
@@ -70,6 +108,24 @@
     transition: background-color 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+/* Dark Mode: Submit button styling */
+body.dark-mode .bt {
+    background-color: #9c27b0; /* Slightly lighter purple for dark mode */
+    border-color: #9c27b0;
+}
+
+/* Hover effect for the submit button */
+.bt:hover {
+    background-color: #601588;
+}
+
+/* Dark Mode: Hover effect for the submit button */
+body.dark-mode .bt:hover {
+    background-color: #7a1cac;
+}
+
+/* Dark Mode: Form Wrapper Styling */
+body.dark-mode .dbf {
+    background-color: #1e1e1e; /* Dark background for form wrapper */
+    color: #f8f9fa;
 }

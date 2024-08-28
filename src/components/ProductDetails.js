@@ -1,7 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { CartContext } from './CartContext';
+import './Footer'
 import './ProductDetails.css';
+import Footer from './Footer';
 
 const ProductDetails = () => {
   const location = useLocation();
@@ -30,6 +32,7 @@ const ProductDetails = () => {
   };
 
   return (
+    <div>
     <div className="product-details container py-5">
       <div className="cont">
         <div className='pdalign'>
@@ -44,11 +47,15 @@ const ProductDetails = () => {
             <span className="quantity mx-3">{quantity}</span>
             <button className="btn bti" onClick={handleIncrement}>+</button>
           </div>
-          <button className="btn btn-primary mt-4" onClick={handleAddToCart}>
+          <button className="btn btp mt-4" onClick={handleAddToCart}>
             Add to Cart
           </button>
         </div>
       </div>
+      
+      
+      </div>
+      <Footer/>
     </div>
   );
 };

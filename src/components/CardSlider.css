@@ -68,3 +68,19 @@
   position: absolute;
   right: 20px;
 }
+
+body.dark-mode .con:hover{
+
+background-color: #56127a;
+color: white;
+
+
+}
+
+.con:hover{
+
+  background-color: #56127a;
+  color: white;
+  
+  
+  }

@@ -30,7 +30,7 @@ const Sidebar = forwardRef(({ isOpen, onClose, recentItems = [] }, ref) => {
         <li>
           <NavLink 
             to="/account" 
-            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+            className={({ isActive }) => isActive ? 'nav-link actives' : 'nav-links'} 
             onClick={onClose}
           >
             Your Account
@@ -39,7 +39,7 @@ const Sidebar = forwardRef(({ isOpen, onClose, recentItems = [] }, ref) => {
         <li>
           <NavLink 
             to="/favorites" 
-            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+            className={({ isActive }) => isActive ? 'nav-link actives' : 'nav-links'} 
             onClick={onClose}
           >
             Favorites
@@ -48,7 +48,7 @@ const Sidebar = forwardRef(({ isOpen, onClose, recentItems = [] }, ref) => {
         <li>
           <NavLink 
             to="/about" 
-            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+            className={({ isActive }) => isActive ? 'nav-link actives' : 'nav-links'} 
             onClick={onClose}
           >
             About
@@ -57,7 +57,7 @@ const Sidebar = forwardRef(({ isOpen, onClose, recentItems = [] }, ref) => {
         <li>
           <NavLink 
             to="/contact" 
-            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+            className={({ isActive }) => isActive ? 'nav-link actives' : 'nav-links'} 
             onClick={onClose}
           >
             Contact
@@ -66,7 +66,7 @@ const Sidebar = forwardRef(({ isOpen, onClose, recentItems = [] }, ref) => {
         <li>
           <NavLink 
             to="/faq" 
-            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} 
+            className={({ isActive }) => isActive ? 'nav-link actives' : 'nav-links'} 
             onClick={onClose}
           >
             FAQ
