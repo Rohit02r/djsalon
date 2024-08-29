@@ -1,4 +1,4 @@
-import React, { useState,useRef ,useEffect} from 'react';
+import React, { useState,useRef } from 'react';
 
 import {Navbar,Nav,Form,FormControl,Button,Dropdown} from 'react-bootstrap';
 
@@ -6,10 +6,9 @@ import {useNavigate,NavLink} from 'react-router-dom';
 import { useDarkMode } from './Darkmode';
 import products from '../components/data/productsd'; // Import your products data
 import services from '../components/data/servicesd';
-import CartIconLight from '../assests/Icon/s.svg'; // Adjust the path as needed
-import ProfileIconLight from '../assests/Icon/a.svg';
-import CartIconDark from '../assests/Icon/shd.svg' // Adjust the path as needed
-import ProfileIconDark from '../assests/Icon/accd.svg'// Adjust the path as needed
+import cartIcon from '../assests/Icon/s.svg'; // Adjust the path as needed
+import profileIcon from '../assests/Icon/a.svg';
+
 import Sidebar from './Sidebar'; // Import the Sidebar component
 import './StickyNavbar.css';
 import Logo from '../assests/Logo/croplogo.png'
@@ -25,22 +24,8 @@ const StickyNavbar = () => {
   const suggestionsRef = useRef(null);
   const searchBoxRef = useRef(null);
 
-  // States to hold the icon sources
-  const [cartIcon, setCartIcon] = useState(CartIconLight);
-  const [profileIcon, setProfileIcon] = useState(ProfileIconLight);
-
-  // useEffect to update icons when darkMode changes
-  useEffect(() => {
-    console.log("Dark mode state changed: ", darkMode); // Log the darkMode state
-    if (darkMode) {
-      setCartIcon(CartIconDark);
-      setProfileIcon(ProfileIconDark);
-    } else {
-      setCartIcon(CartIconLight);
-      setProfileIcon(ProfileIconLight);
-    }
-  }, [darkMode]);
-
+ 
+ 
   const handleSearchChange = (event) => {
     const term = event.target.value;
     setSearchTerm(term);
