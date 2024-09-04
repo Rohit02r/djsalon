@@ -7,7 +7,7 @@ import AOS from 'aos';
 import RedHeart from '../assests/Icon/rh.svg';
 import EmptyHeart from '../assests/Icon/eh.svg';
 import './Products.css';
-import products from '../components/data/productsd';  // Import the product data
+import products from '../components/data/productsd';  
 
 const Products = () => {
   const navigate = useNavigate(); 

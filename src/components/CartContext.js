@@ -20,12 +20,12 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // Function to remove a product from the cart by product ID
+ 
   const removeFromCart = (productId) => {
     setCart(prevCart => prevCart.filter(item => item.product.id !== productId));
   };
 
-  // Function to clear the entire cart
+  
   const clearCart = () => {
     setCart([]);
   };

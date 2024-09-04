@@ -1,42 +1,35 @@
-/* Default light mode styles */
 body {
   background-color: #ffffff;
   color: #000000;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Dark mode styles */
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
 }
 
-/* Navbar styles in dark mode */
 body.dark-mode .navbar {
   background-color: #333333;
   border-bottom: 1px solid #444444;
 }
 
-/* Link styles in dark mode */
 body.dark-mode a {
   color: #bb86fc;
 }
 
-/* Card styles in dark mode */
 body.dark-mode .card {
   background-color: #1e1e1e;
   color: #ffffff;
   border: 1px solid #333333;
 }
 
-/* Form control styles in dark mode */
 body.dark-mode .form-control {
   background-color: #504f4f;
   color: #ffffff;
   border: 1px solid #444444;
 }
 
-/* Button styles in dark mode */
 body.dark-mode .btn-outline-success {
   color: #bb86fc;
   border-color: #bb86fc;
@@ -47,21 +40,19 @@ body.dark-mode .btn-outline-success:hover {
   color: #fcfafa;
 }
 
-/* Placeholder text color in dark mode */
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
-  color: #cccccc; /* Adjusted for better readability */
-  opacity: 1; /* Ensure full opacity for placeholder text */
+  color: #cccccc;
+  opacity: 1;
 }
 
-/* Sidebar styles */
 .sidebar {
   position: fixed;
   top: 9%;
   right: 0;
   width: 250px;
   height: 100%;
-  background-color: #fff; /* Light mode color */
+  background-color: #fff;
   transition: transform 0.3s ease;
   transform: translateX(100%);
   overflow-y: auto;
@@ -76,7 +67,7 @@ body.dark-mode textarea::placeholder {
   display: flex;
   justify-content: flex-end;
   padding: 15px;
-  background-color: #f8f9fa; /* Light mode background color for header */
+  background-color: #f8f9fa;
 }
 
 .sidebar-header .close-btn {
@@ -99,38 +90,37 @@ body.dark-mode textarea::placeholder {
 .sidebar-menu li a {
   margin: 0 10px;
   text-decoration: none;
-  color: #000; /* Light mode link color */
+  color: #000;
   display: block;
-  padding: 10px; /* Add padding for better spacing */
-  border-radius: 4px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition */
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .sidebar-menu li a:hover,
 .sidebar-menu li a.actives {
   background-color: #b4b5b6;
-  color: white; /* Light mode hover and active color */
+  color: white;
 }
 
-/* Dark mode sidebar styles */
 .dark-mode .sidebar {
-  background-color: #333; /* Dark mode background color */
+  background-color: #333;
 }
 
 .dark-mode .sidebar-header {
-  background-color: #444; /* Dark mode background color for header */
+  background-color: #444;
 }
 
 .dark-mode .sidebar-menu li a {
-  color: #fff; /* Dark mode link color */
+  color: #fff;
 }
 
 .dark-mode .sidebar-menu li a:hover,
 .dark-mode .sidebar-menu li a.actives {
-  background-color: #555; 
-  color: white;/* Dark mode hover and active color */
+  background-color: #555;
+  color: white;
 }
-/* Sidebar.css */
+
 .sidebar-menu ul {
   list-style: none;
   padding-left: 0;
@@ -140,8 +130,9 @@ body.dark-mode textarea::placeholder {
   padding: 8px 0;
   cursor: pointer;
 }
+
 @media (max-width: 600px) {
   .sidebar {
-    top: 18%; /* Start from 20% from the top on mobile view */
+    top: 18%;
   }
 }

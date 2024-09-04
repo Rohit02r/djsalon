@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './FAQ.css';
 import Footer from '../Footer';
 
-// FAQ data
+
 const faqs = [
   { question: "What services do you offer at DJ Saloon?", answer: "We offer a range of services including haircuts, massages, hair coloring, and skincare treatments." },
   { question: "How can I book an appointment?", answer: "You can book an appointment through our website's booking form or by calling our salon directly." },

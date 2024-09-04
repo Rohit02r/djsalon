@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from './CartContext';
-import './Cart.css'; // Import CSS for styling
+import './Cart.css'; 
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
-  const navigate = useNavigate(); // Initialize the navigate hook
+  const navigate = useNavigate(); 
 
-  // Function to convert the product title to a URL-friendly format
+ 
   const formatTitleForURL = (title) => {
     return title.toLowerCase().replace(/\s+/g, '-');
   };
 
-  // Function to handle navigation when a cart item is clicked
+
   const handleItemClick = (item) => {
     navigate(`/products/${formatTitleForURL(item.product.title)}`, {
       state: { product: item.product },

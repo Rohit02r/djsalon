@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../components/Footer';
 import './Contact.css';
 
-// Validation schema using Yup
+
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('Name is required'),
   phone: Yup.string()

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import BookingForm from './BookingForm'; // Ensure this path is correct
+import BookingForm from './BookingForm'; 
 import './CardSlider.css';
 import Hair1 from '../assests/Hair/hair 1.jpg';
 import Hair2 from '../assests/Hair/Makeup copy.jpg';
@@ -30,7 +30,7 @@ const CardSlider = () => {
     if (currentIndex < totalSlides - visibleSlides) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      setCurrentIndex(0); // Loop back to the beginning when reaching the end
+      setCurrentIndex(0); 
     }
   };
 
@@ -38,7 +38,7 @@ const CardSlider = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     } else {
-      setCurrentIndex(totalSlides - visibleSlides); // Loop back to the last set of visible slides
+      setCurrentIndex(totalSlides - visibleSlides); 
     }
   };
 

@@ -1,15 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { useNavigate } from 'react-router-dom'; 
 
 
-// Import images
+
 import HaircutsImage from '../assests/Hair/hair 1.jpg';
 import FacialsImage from '../assests/Services/facial.jpg';
 import MakeupImage from '../assests/Services/makeup.jpg';
 import ManicurePedicureImage from '../assests/Services/manicure.jpg';
 
 const FeaturedServices = () => {
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate(); 
 
   const services = [
     { 
@@ -39,8 +39,8 @@ const FeaturedServices = () => {
   ];
 
   const handleCardClick = (route) => {
-    console.log("Navigating to:", route); // Debug line
-    navigate(route); // Navigate to the respective route on card click
+    console.log("Navigating to:", route); 
+    navigate(route); 
   };
 
   return (

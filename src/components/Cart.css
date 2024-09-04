@@ -1,7 +1,7 @@
-/* src/components/Cart.css */
+
 .container {
   padding: 20px;
-   /* Match background color */
+   
   border-radius: 8px;
 }
 
@@ -11,10 +11,10 @@ h2 {
 }
 
 .cart-items {
-   /* White background for the items */
+  
   padding: 16px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .cart-item {
@@ -22,9 +22,9 @@ h2 {
   align-items: flex-start;
   padding: 16px;
   margin-bottom: 12px;
-  border-radius: 8px; /* Card border radius */
-  /* Card background color */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); /* Card shadow */
+  border-radius: 8px; 
+ 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); 
 }
 
 .cart-item-content {
@@ -37,14 +37,14 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 25%; /* Set the width for image and title column */
+  width: 25%; 
   margin-right: 20px;
 }
 
 .card-img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px; /* Space between image and title */
+  margin-bottom: 10px; 
 }
 
 .card-title {
@@ -54,9 +54,8 @@ h2 {
 
 .cart-item-details {
   margin: auto;
-  /* text-align: center;
-  justify-content: center; */
-  width: 75%; /* Set the width for details column */
+ 
+  width: 75%; 
 }
 
 .card-text {

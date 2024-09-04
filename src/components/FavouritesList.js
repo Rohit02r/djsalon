@@ -1,15 +1,14 @@
-// src/components/FavoritesList.js
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useFavorites } from '../components/FavouritesContext'; // Adjust import path as needed
-import products from '../../src/components/data/productsd'; // Import your products data
-import './FavouritesList.css'; // Import CSS for styling
-
+import { useFavorites } from '../components/FavouritesContext'; 
+import products from '../../src/components/data/productsd'; 
+import './FavouritesList.css'; 
 const FavoritesList = () => {
   const navigate = useNavigate();
   const { favorites } = useFavorites();
 
-  // Filter products based on favorites
+  
   const favoriteProducts = products.filter(product => favorites.includes(product.id));
 
   return (

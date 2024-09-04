@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, forwardRef } from 'react';
-import { NavLink } from 'react-router-dom'; // Use NavLink for active link styles
+import { NavLink } from 'react-router-dom'; 
 import './Sidebar.css';
 
 const Sidebar = forwardRef(({ isOpen, onClose, recentItems = [] }, ref) => {

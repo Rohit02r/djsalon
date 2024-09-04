@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './BookingForm.css';
 
 const BookingForm = ({ service, onClose }) => {
-  // Define the validation schema
+
   const validationSchema = Yup.object().shape({
     name: Yup.string().required('Name is required'),
     

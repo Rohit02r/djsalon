@@ -1,19 +1,19 @@
-/* General container styling */
+
 .container {
   margin: 0 auto;
 }
 
-/* Terms card styling */
+
 .terms-car {
-  background-color: rgba(219, 218, 219, 0.9); /* Faded background color */
+  background-color: rgba(219, 218, 219, 0.9); 
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left; 
 }
 
-/* Header and paragraph styling within the cards */
+
 .terms-car h2 {
   margin-left: 10%;
   text-align: left;
@@ -25,15 +25,15 @@
   font-size: 16px;
   width: 50%;
   line-height: 1.8;
-  margin-bottom: 10px; /* Add some space between paragraphs */
+  margin-bottom: 10px; 
 }
 
-/* Dark mode styles for terms cards */
+
 body.dark-mode .terms-car {
-  background-color: rgba(122, 28, 172, 0.486); /* Dark mode background color */
+  background-color: rgba(122, 28, 172, 0.486); 
 }
 
-/* Buttons */
+
 .account-btn {
   margin-left: 7%;
   width: 35%;
@@ -60,7 +60,7 @@ body.dark-mode .terms-car {
   border-color: #bd2130;
 }
 
-/* Notification preferences */
+
 .checkbox-label {
   margin-left: 12%;
   display: block;
@@ -72,7 +72,7 @@ body.dark-mode .terms-car {
   margin-right: 10px;
 }
 
-/* Adjustments for form elements */
+
 input,
 textarea {
   font-size: 16px;
@@ -100,7 +100,6 @@ textarea {
   width: 60%;
 }
 
-/* Dark Mode Toggle Switch */
 .theme-checkbox {
   background: #333;
   padding-bottom: 0px;
@@ -135,7 +134,7 @@ textarea {
   transform: translateX(26px);
 }
 
-/* Styling for the label next to the switch */
+
 .theme-checkbox + span {
   margin-left: 10px;
   font-size: 16px;
@@ -154,24 +153,24 @@ body.dark-mode .theme-checkbox + span {
   text-align: center;
   align-items: center;
 
-/* Adjust margin for mobile view */
+
 }
 .dr{
   margin-top: 0%;
   
 }
 
-/* Additional styling for mobile view */
+
 @media (max-width: 600px) {
   .btav,
   .bta
    {
-    width: 80%; /* Adjust button width for mobile view */
-    padding: 7px 0; /* Adjust padding for smaller buttons */
+    width: 80%; 
+    padding: 7px 0;
   }
 
   .terms-car p {
-    width: 80%; /* Adjust paragraph width for mobile view */
+    width: 80%; 
   }
 
   .checkbox-label {
@@ -179,10 +178,10 @@ body.dark-mode .theme-checkbox + span {
   }
 
   .terms-car h2 {
-    font-size: 20px; /* Adjust heading font size for mobile view */
+    font-size: 20px; 
   }
   
   .tr {
-    margin-left: 5%; /* Adjust margin for mobile view */
+    margin-left: 5%; 
   }
 }

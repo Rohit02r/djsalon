@@ -15,7 +15,7 @@ const Home = () => {
       <OffersCarousel />
       
       <div className="container  dm mt-5">
-        {/* Introductory Text as a Card */}
+        
         <div className="card hdm shadow p-4 mb-5">
           <h3 className="card-title text-center">Welcome to DJ Saloon</h3>
           <p className="card-text fs-6">
@@ -23,14 +23,13 @@ const Home = () => {
           </p>
         </div>
         
-        {/* New Section: Featured Services */}
+       
         <FeaturedServices />
 
-        {/* Meet Our Artists Section */}
         <h2 className="text-center mb-4">Meet Our Artists</h2>
         <CardSlider />
         
-        {/* New Section: Testimonials */}
+       
         <Testimonials />
         
       </div>

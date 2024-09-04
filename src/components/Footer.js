@@ -10,14 +10,14 @@ const Footer = () => {
     <footer className="footer bg-dark text-light py-4">
       <div className="footer-container container">
         <div className="footer-row row">
-          {/* Contact Us Section */}
+         
           <div className="footer-col col-md-4 text-center">
             <h5 className="footer-heading">Contact Us</h5>
             <p>Email: info@djsaloon.com</p>
             <p>Phone: +123 456 7890</p>
           </div>
 
-          {/* Quick Links Section */}
+          
           <div className="footer-col col-md-4 text-center">
             <h5 className="footer-heading">Quick Links</h5>
             <ul className="footer-links">
@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Follow Us Section */}
+         
           <div className="footer-col col-md-4 text-center">
             <h5 className="footer-heading">Follow Us</h5>
             <div className="footer-social-icons align-center">

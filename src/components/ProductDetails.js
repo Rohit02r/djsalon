@@ -10,10 +10,10 @@ const ProductDetails = () => {
   const { addToCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(1);
 
-  // Retrieve product from location state
+  
   const product = location.state?.product;
 
-  console.log('Product Data:', product); // Debugging
+  console.log('Product Data:', product); 
 
   if (!product) {
     return <div>Product not found</div>;

@@ -4,7 +4,7 @@ import { Modal } from 'react-bootstrap';
 import BookingForm from '../components/BookingForm';
 import Footer from '../components/Footer';
 import './ServiceDetails.css';
-import services from '../components/data/servicesd'; // Import services data
+import services from '../components/data/servicesd'; 
 
 const ServiceDetails = () => {
   const { serviceName } = useParams();

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Import testimonial images
+
 import Customer1 from '../assests/Review/review f1.jpg';
 import Customer2 from '../assests/Review/review m 1.jpg';
 import Customer3 from '../assests/Review/review m2.jpg';

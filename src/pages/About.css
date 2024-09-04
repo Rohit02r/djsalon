@@ -1,13 +1,12 @@
 .about-container {
   padding: 40px;
   line-height: 2;
-  background-color: #f9f9f9; /* Light background for normal mode */
-
+  background-color: #f9f9f9;
 }
 
 body.dark-mode .about-container {
-  background-color: #1e1e1e; /* Dark background for dark mode */
-  color: #ffffff; /* Light text for dark mode */
+  background-color: #1e1e1e;
+  color: #ffffff;
 }
 
 .intro h2 {
@@ -22,14 +21,14 @@ body.dark-mode .about-container {
   line-height: 1.8;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #eaeaea; /* Light background for paragraph block */
+  background-color: #eaeaea;
   padding: 15px;
   border-radius: 8px;
 }
 
 body.dark-mode .intro p {
-  background-color: #2a2a2a; /* Dark background for paragraph block in dark mode */
-  color: #cccccc; /* Light text color for dark mode */
+  background-color: #2a2a2a;
+  color: #cccccc;
 }
 
 .reviews {
@@ -40,7 +39,7 @@ body.dark-mode .intro p {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .review-card {
@@ -50,7 +49,7 @@ body.dark-mode .intro p {
   width: 30%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  background-color: #ffffff; /* Light background for review cards */
+  background-color: #ffffff;
   color: #333333;
 }
 
@@ -82,8 +81,8 @@ body.dark-mode .review-image {
 }
 
 .term-card {
-  background-color: rgba(122, 28, 172, 0.9); /* Faded version of #007bff */
-  color: #fdfcfc;  
+  background-color: rgba(122, 28, 172, 0.9);
+  color: #fdfcfc;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
@@ -99,12 +98,10 @@ body.dark-mode .review-image {
 .term-card h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #007bff; /* Use the same color as the button for the heading */
+  color: #007bff;
 }
 
 .term-card p {
   font-size: 16px;
   line-height: 1.6;
-  /* color: #333333; */
 }
-

@@ -4,12 +4,12 @@ import {Navbar,Nav,Form,FormControl,Button,Dropdown} from 'react-bootstrap';
 
 import {useNavigate,NavLink} from 'react-router-dom';
 import { useDarkMode } from './Darkmode';
-import products from '../components/data/productsd'; // Import your products data
+import products from '../components/data/productsd'; 
 import services from '../components/data/servicesd';
-import cartIcon from '../assests/Icon/s.svg'; // Adjust the path as needed
+import cartIcon from '../assests/Icon/s.svg'; 
 import profileIcon from '../assests/Icon/a.svg';
 
-import Sidebar from './Sidebar'; // Import the Sidebar component
+import Sidebar from './Sidebar'; 
 import './StickyNavbar.css';
 import Logo from '../assests/Logo/croplogo.png'
 
@@ -19,7 +19,7 @@ const StickyNavbar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
-  const { darkMode } = useDarkMode(); // Fetch dark mode state from hook
+  const { darkMode } = useDarkMode(); 
   const sidebarRef = useRef(null);
   const suggestionsRef = useRef(null);
   const searchBoxRef = useRef(null);

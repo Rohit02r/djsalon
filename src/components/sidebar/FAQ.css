@@ -25,7 +25,7 @@
   }
   
   .faq-list li {
-    background-color: rgba(122, 28, 172, 0.9); /* #7A1CAC faded */
+    background-color: rgba(122, 28, 172, 0.9); 
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     padding: 15px;
@@ -75,9 +75,9 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  display: block; /* Show when sticky */
-  z-index: 100; /* Ensure it stays above other content */
-  background-color: #333; /* Ensure it has a background */
+  display: block;
+  z-index: 100; 
+  background-color: #333; 
   color: white;
   padding: 20px;
   text-align: center;

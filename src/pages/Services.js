@@ -7,7 +7,7 @@ import './Services.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-import services from '../components/data/servicesd'; // Adjust the path as needed
+import services from '../components/data/servicesd'; 
 
 const Services = () => {
   const [showModal, setShowModal] = useState(false);
